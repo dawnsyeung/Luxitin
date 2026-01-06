@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #fbfaf7; /* soft ivory */
+  --fg: #171717;
+  --muted: #6b6b6b;
+  --line: rgba(23, 23, 23, 0.12);
+  --champagne: #e7ddc8;
+  --gold: #bda46a;
+  --silver: #c8cdd6;
+
+  --radius: 18px;
+  --shadow: 0 20px 80px rgba(23, 23, 23, 0.12);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(1200px 600px at 20% 0%, rgba(231, 221, 200, 0.35), transparent 60%),
+    radial-gradient(900px 500px at 90% 10%, rgba(200, 205, 214, 0.25), transparent 55%),
+    var(--bg);
+  color: var(--fg);
+  text-rendering: geometricPrecision;
+}
+
+::selection {
+  background: rgba(189, 164, 106, 0.28);
+}
+
+/* Subtle hair-like shimmer line */
+.luxitin-shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(231, 221, 200, 0.18) 20%,
+    rgba(189, 164, 106, 0.22) 50%,
+    rgba(200, 205, 214, 0.18) 80%,
+    transparent 100%
+  );
+}
+

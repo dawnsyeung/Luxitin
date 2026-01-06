@@ -1,2 +1,0 @@
-# Luxitin
-Luxe Hair
