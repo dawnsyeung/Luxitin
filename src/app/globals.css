@@ -170,6 +170,15 @@ body {
   filter: blur(0.1px);
 }
 
+@media (max-width: 639px) {
+  .luxitin-header::before {
+    left: -2px;
+    top: -6px;
+    font-size: 40px;
+    opacity: 0.14;
+  }
+}
+
 @keyframes luxitin-flow {
   0% {
     background-position: 0% 50%;

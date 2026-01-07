@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 function isActive(pathname: string, href: string) {
   if (href === "/") return pathname === "/";
@@ -10,6 +11,11 @@ function isActive(pathname: string, href: string) {
 
 export function SiteHeader() {
   const pathname = usePathname() ?? "/";
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
 
   return (
     <header className="py-6 luxitin-header">
@@ -23,10 +29,56 @@ export function SiteHeader() {
             luxitin
           </span>
         </Link>
+
+        {/* Desktop nav */}
         <nav
           aria-label="Primary"
-          className="flex flex-wrap items-center justify-end gap-x-6 gap-y-2 text-sm"
+          className="hidden sm:flex flex-wrap items-center justify-end gap-x-6 gap-y-2 text-sm"
         >
+          <Link
+            href="/science"
+            aria-current={isActive(pathname, "/science") ? "page" : undefined}
+            className="text-[color:var(--muted)] hover:text-[color:var(--fg)] aria-[current=page]:text-[color:var(--fg)]"
+          >
+            Science
+          </Link>
+          <Link
+            href="/sustainability"
+            aria-current={
+              isActive(pathname, "/sustainability") ? "page" : undefined
+            }
+            className="text-[color:var(--muted)] hover:text-[color:var(--fg)] aria-[current=page]:text-[color:var(--fg)]"
+          >
+            Sustainability
+          </Link>
+          <Link
+            href="/#contact"
+            className="text-[color:var(--muted)] hover:text-[color:var(--fg)]"
+          >
+            Contact
+          </Link>
+        </nav>
+
+        {/* Mobile menu button */}
+        <button
+          type="button"
+          className="sm:hidden inline-flex items-center justify-center rounded-xl border border-[color:var(--line)] bg-white/40 px-3 py-2 text-sm font-medium text-[color:var(--fg)] backdrop-blur"
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isMenuOpen}
+          aria-controls="mobile-nav"
+          onClick={() => setIsMenuOpen((v) => !v)}
+        >
+          Menu
+        </button>
+      </div>
+
+      {/* Mobile dropdown */}
+      <div
+        id="mobile-nav"
+        hidden={!isMenuOpen}
+        className="sm:hidden mt-4 luxitin-surface p-4"
+      >
+        <nav aria-label="Primary mobile" className="flex flex-col gap-3 text-sm">
           <Link
             href="/science"
             aria-current={isActive(pathname, "/science") ? "page" : undefined}
