@@ -17,13 +17,16 @@ export function SiteHeader() {
         <Link
           href="/"
           aria-label="Luxitin home"
-          className="relative -ml-1 rounded-xl px-2 py-2"
+          className="relative -ml-1 rounded-xl px-2 py-1 shrink-0"
         >
-          <span className="luxitin-logo text-[28px] sm:text-[30px]">
+          <span className="luxitin-logo text-[40px] sm:text-[56px] lg:text-[60px]">
             luxitin
           </span>
         </Link>
-        <nav aria-label="Primary" className="flex items-center gap-6 text-sm">
+        <nav
+          aria-label="Primary"
+          className="flex flex-wrap items-center justify-end gap-x-6 gap-y-2 text-sm"
+        >
           <Link
             href="/science"
             aria-current={isActive(pathname, "/science") ? "page" : undefined}

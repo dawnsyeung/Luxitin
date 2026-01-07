@@ -137,9 +137,10 @@ body {
 .luxitin-logo {
   position: relative;
   display: inline-block;
-  font-family: inherit;
-  font-weight: 800;
-  letter-spacing: -0.045em;
+  font-family: Didot, "Didot LT STD", "Linotype Didot", "Bodoni 72",
+    "Bodoni MT", "Libre Bodoni", var(--font-serif), ui-serif, Georgia, serif;
+  font-weight: 900;
+  letter-spacing: -0.055em;
   line-height: 1;
   text-transform: lowercase;
   color: rgba(15, 15, 16, 0.92);
@@ -157,7 +158,8 @@ body {
   position: absolute;
   left: -8px;
   top: -10px;
-  font-family: var(--font-canela);
+  font-family: Didot, "Didot LT STD", "Linotype Didot", "Bodoni 72",
+    "Bodoni MT", "Libre Bodoni", var(--font-serif), ui-serif, Georgia, serif;
   font-weight: 800;
   letter-spacing: -0.06em;
   font-size: clamp(44px, 5vw, 64px);
