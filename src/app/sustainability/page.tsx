@@ -50,25 +50,25 @@ export default function SustainabilityPage() {
         </div>
 
         <div className="lg:col-span-6">
-          <div className="luxitin-film luxitin-noise -rotate-1">
+          <div className="overflow-hidden rounded-[var(--radius)] border border-[color:var(--line)] bg-white/5 shadow-[var(--shadow)]">
             <div className="relative h-[420px] sm:h-[520px]">
               <Image
                 src={hair05}
                 alt="Hair in motion with golden-hour shine"
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"
-                className="object-cover luxitin-film-img"
+                className="object-cover"
                 priority
               />
             </div>
-            <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
-              <p className="text-xs font-medium tracking-[0.28em] uppercase text-white/70">
-                Modern luxury = modern responsibility
-              </p>
-              <p className="mt-2 max-w-prose text-sm leading-relaxed text-white/85">
-                The most beautiful results are the ones you can stand behind.
-              </p>
-            </div>
+          </div>
+          <div className="mt-4 luxitin-surface p-6">
+            <p className="text-xs font-semibold tracking-[0.26em] uppercase text-[color:var(--muted)]">
+              Modern luxury = modern responsibility
+            </p>
+            <p className="mt-3 max-w-prose text-sm leading-relaxed text-[color:var(--muted)]">
+              The most beautiful results are the ones you can stand behind.
+            </p>
           </div>
         </div>
       </section>
@@ -267,14 +267,14 @@ export default function SustainabilityPage() {
 
       <section className="mt-14 grid gap-6 lg:grid-cols-12 lg:items-center">
         <div className="lg:col-span-6">
-          <div className="luxitin-film luxitin-noise rotate-1">
+          <div className="overflow-hidden rounded-[var(--radius)] border border-[color:var(--line)] bg-white/5 shadow-[var(--shadow)]">
             <div className="relative h-[420px] sm:h-[520px]">
               <Image
                 src={hair08}
                 alt="Long hair texture with a warm, luminous finish"
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"
-                className="object-cover luxitin-film-img"
+                className="object-cover"
               />
             </div>
           </div>

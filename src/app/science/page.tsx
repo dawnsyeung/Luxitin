@@ -48,26 +48,26 @@ export default function SciencePage() {
         </div>
 
         <div className="lg:col-span-6">
-          <div className="luxitin-film luxitin-noise rotate-1">
+          <div className="overflow-hidden rounded-[var(--radius)] border border-[color:var(--line)] bg-white/5 shadow-[var(--shadow)]">
             <div className="relative h-[420px] sm:h-[520px]">
               <Image
                 src={hair04}
                 alt="Smooth, glossy hair with a clean luxury silhouette"
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"
-                className="object-cover luxitin-film-img"
+                className="object-cover"
                 priority
               />
             </div>
-            <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
-              <p className="text-xs font-medium tracking-[0.28em] uppercase text-white/70">
-                Film-forming, not heavy
-              </p>
-              <p className="mt-2 max-w-prose text-sm leading-relaxed text-white/85">
-                Think “micro‑veil”: flexible, breathable, and designed to keep
-                hair moving.
-              </p>
-            </div>
+          </div>
+          <div className="mt-4 luxitin-surface p-6">
+            <p className="text-xs font-semibold tracking-[0.26em] uppercase text-[color:var(--muted)]">
+              Film-forming, not heavy
+            </p>
+            <p className="mt-3 max-w-prose text-sm leading-relaxed text-[color:var(--muted)]">
+              Think “micro‑veil”: flexible, breathable, and designed to keep
+              hair moving.
+            </p>
           </div>
         </div>
       </section>
@@ -231,14 +231,14 @@ export default function SciencePage() {
         </div>
 
         <div className="lg:col-span-6">
-          <div className="luxitin-film luxitin-noise -rotate-1">
+          <div className="overflow-hidden rounded-[var(--radius)] border border-[color:var(--line)] bg-white/5 shadow-[var(--shadow)]">
             <div className="relative h-[420px] sm:h-[520px]">
               <Image
                 src={hair07}
                 alt="Hair with deep shine and soft movement"
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"
-                className="object-cover luxitin-film-img"
+                className="object-cover"
               />
             </div>
           </div>
