@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import hair04 from "@/components/luxitin_hair_04.png";
+import hair07 from "@/components/luxitin_hair_07.png";
+
 export const metadata = {
   title: "Science",
   description:
@@ -48,14 +51,16 @@ export default function SciencePage() {
           <div className="luxitin-noise relative overflow-hidden rounded-[var(--radius)] border border-[color:var(--line)] bg-[color:var(--obsidian)] shadow-[var(--shadow)]">
             <div className="absolute inset-0 luxitin-hairlines opacity-60" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/25 to-black/10" />
-            <Image
-              src="https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b?auto=format&fit=crop&w=2000&q=80"
-              alt="Luxury hair texture and shine in soft light"
-              width={1800}
-              height={1400}
-              className="h-[420px] w-full object-cover opacity-90 sm:h-[520px]"
-              priority
-            />
+            <div className="relative h-[420px] sm:h-[520px]">
+              <Image
+                src={hair04}
+                alt="Smooth, glossy hair with a clean luxury silhouette"
+                fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="object-cover opacity-90"
+                priority
+              />
+            </div>
             <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
               <p className="text-xs font-medium tracking-[0.28em] uppercase text-white/70">
                 Film-forming, not heavy
@@ -231,13 +236,15 @@ export default function SciencePage() {
           <div className="luxitin-noise relative overflow-hidden rounded-[var(--radius)] border border-[color:var(--line)] bg-[color:var(--obsidian)] shadow-[var(--shadow)]">
             <div className="absolute inset-0 luxitin-hairlines opacity-55" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/10" />
-            <Image
-              src="https://images.unsplash.com/photo-1520975661595-6453be3f7070?auto=format&fit=crop&w=2000&q=80"
-              alt="Healthy hair with shine and movement"
-              width={1800}
-              height={1200}
-              className="h-[420px] w-full object-cover opacity-90 sm:h-[520px]"
-            />
+            <div className="relative h-[420px] sm:h-[520px]">
+              <Image
+                src={hair07}
+                alt="Hair with deep shine and soft movement"
+                fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="object-cover opacity-90"
+              />
+            </div>
           </div>
         </div>
       </section>

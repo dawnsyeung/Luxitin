@@ -1,6 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import hair01 from "@/components/luxitin_hair_01.png";
+import hair02 from "@/components/luxitin_hair_02.png";
+import hair03 from "@/components/luxitin_hair_03.png";
+import hair05 from "@/components/luxitin_hair_05.png";
+import hair06 from "@/components/luxitin_hair_06.png";
+import hair09 from "@/components/luxitin_hair_09.png";
+
 export default function HomePage() {
   return (
     <div className="py-10 sm:py-16">
@@ -60,14 +67,16 @@ export default function HomePage() {
           <div className="luxitin-noise relative overflow-hidden rounded-[var(--radius)] border border-[color:var(--line)] bg-[color:var(--obsidian)] shadow-[var(--shadow)]">
             <div className="absolute inset-0 luxitin-hairlines opacity-70" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/20 to-black/10" />
-            <Image
-              src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=2000&q=80"
-              alt="Glossy, healthy hair in warm light"
-              width={1800}
-              height={2200}
-              className="h-[520px] w-full object-cover opacity-90 sm:h-[640px]"
-              priority
-            />
+            <div className="relative h-[520px] sm:h-[640px]">
+              <Image
+                src={hair01}
+                alt="Luxury hair with glossy waves in evening light"
+                fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="object-cover opacity-90"
+                priority
+              />
+            </div>
             <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8">
               <p className="text-xs font-medium tracking-[0.28em] uppercase text-white/70">
                 The biopolymer veil
@@ -188,13 +197,15 @@ export default function HomePage() {
           <div className="lg:col-span-5">
             <div className="relative overflow-hidden rounded-[var(--radius)] border border-white/10 bg-white/5">
               <div className="absolute inset-0 luxitin-hairlines opacity-40" />
-              <Image
-                src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1600&q=80"
-                alt="Close-up hair strands in motion"
-                width={1600}
-                height={1200}
-                className="h-[320px] w-full object-cover opacity-85"
-              />
+              <div className="relative h-[320px]">
+                <Image
+                  src={hair03}
+                  alt="Polished curls with deep shine"
+                  fill
+                  sizes="(min-width: 1024px) 40vw, 100vw"
+                  className="object-cover opacity-85"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -245,6 +256,71 @@ export default function HomePage() {
               A featherlight finishing veil for softness, frizz control, and
               movement—especially in humidity.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="mt-14">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p className="text-xs font-semibold tracking-[0.26em] uppercase text-[color:var(--muted)]">
+              Atelier gallery
+            </p>
+            <h2 className="mt-3 text-2xl font-semibold tracking-tight sm:text-3xl">
+              Movement, shine, and texture—captured in light.
+            </h2>
+          </div>
+          <Link
+            href="/science"
+            className="text-sm font-medium text-[color:var(--fg)] underline decoration-[color:var(--gold)] decoration-2 underline-offset-4"
+          >
+            The science behind the shine
+          </Link>
+        </div>
+
+        <div className="mt-8 grid gap-4 lg:grid-cols-12">
+          <div className="luxitin-noise relative overflow-hidden rounded-[var(--radius)] border border-[color:var(--line)] bg-[color:var(--obsidian)] shadow-[var(--shadow)] lg:col-span-6">
+            <div className="absolute inset-0 luxitin-hairlines opacity-55" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/20 to-black/10" />
+            <div className="relative h-[360px] sm:h-[420px]">
+              <Image
+                src={hair02}
+                alt="Wind-swept hair with sunlit gloss"
+                fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="object-cover opacity-88"
+              />
+            </div>
+          </div>
+
+          <div className="grid gap-4 lg:col-span-6 sm:grid-cols-2">
+            <div className="luxitin-noise relative overflow-hidden rounded-[var(--radius)] border border-[color:var(--line)] bg-[color:var(--obsidian)] shadow-[var(--shadow)]">
+              <div className="absolute inset-0 luxitin-hairlines opacity-55" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/10" />
+              <div className="relative h-[260px] sm:h-[320px]">
+                <Image
+                  src={hair05}
+                  alt="Glossy hair in motion at golden hour"
+                  fill
+                  sizes="(min-width: 1024px) 25vw, 100vw"
+                  className="object-cover opacity-88"
+                />
+              </div>
+            </div>
+
+            <div className="luxitin-noise relative overflow-hidden rounded-[var(--radius)] border border-[color:var(--line)] bg-[color:var(--obsidian)] shadow-[var(--shadow)]">
+              <div className="absolute inset-0 luxitin-hairlines opacity-55" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/10" />
+              <div className="relative h-[260px] sm:h-[320px]">
+                <Image
+                  src={hair06}
+                  alt="Smooth hair texture with warm highlights"
+                  fill
+                  sizes="(min-width: 1024px) 25vw, 100vw"
+                  className="object-cover opacity-88"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
