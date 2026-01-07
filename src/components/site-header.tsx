@@ -19,7 +19,7 @@ export function SiteHeader() {
           aria-label="Luxitin home"
           className="rounded-xl bg-[color:var(--obsidian)] px-3 py-2 shadow-[var(--shadow)]"
         >
-          <span className="luxitin-logo text-[22px]" data-text="luxitin">
+          <span className="luxitin-logo text-[28px] sm:text-[30px]">
             luxitin
           </span>
         </Link>
