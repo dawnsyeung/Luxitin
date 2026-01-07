@@ -24,18 +24,20 @@ export const metadata: Metadata = {
     template: "%s · Luxitin",
   },
   description:
-    "French-inspired biotech refinement for extraordinary hair—next-generation natural biopolymers, exceptional purity, and elevated performance.",
+    "Luxury biotech haircare powered by chitin & chitosan—high-shine, weightless smoothness, and a modern sustainability story inspired by insect-biotech purification.",
   keywords: [
     "Luxury sustainable hair care",
     "Natural biopolymer hair care",
     "French biotech beauty",
     "Chitin hair care",
     "Chitosan hair care",
+    "BSFL chitosan",
+    "Insect biotech cosmetics",
   ],
   openGraph: {
     title: "Luxitin",
     description:
-      "French-inspired biotech refinement for extraordinary hair—next-generation natural biopolymers, exceptional purity, and elevated performance.",
+      "Luxury biotech haircare powered by chitin & chitosan—high-shine, weightless smoothness, and a modern sustainability story inspired by insect-biotech purification.",
     type: "website",
   },
   robots: {
