@@ -137,16 +137,106 @@ body {
 .luxitin-logo {
   position: relative;
   display: inline-block;
-  font-family: "Aptos Display", Aptos, "Segoe UI", var(--font-sans), system-ui,
-    -apple-system, sans-serif;
+  font-family: inherit;
   font-weight: 800;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.045em;
   line-height: 1;
   text-transform: lowercase;
-  color: rgba(255, 255, 255, 0.98);
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
+  color: rgba(15, 15, 16, 0.92);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Header “integrated” wordmark watermark */
+.luxitin-header {
+  position: relative;
+}
+.luxitin-header::before {
+  content: "luxitin";
+  position: absolute;
+  left: -8px;
+  top: -10px;
+  font-family: var(--font-canela);
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  font-size: clamp(44px, 5vw, 64px);
+  line-height: 1;
+  opacity: 0.18;
+  color: rgba(200, 164, 74, 0.42);
+  pointer-events: none;
+  filter: blur(0.1px);
+}
+
+/* Vintage “film shot” frame: fade + foxing + grain */
+.luxitin-film {
+  position: relative;
+  overflow: hidden;
+  border-radius: calc(var(--radius) + 6px);
+  background: linear-gradient(
+      180deg,
+      rgba(255, 245, 228, 0.85),
+      rgba(240, 226, 198, 0.65)
+    ),
+    rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(15, 15, 16, 0.12);
+  box-shadow: 0 30px 90px rgba(11, 11, 13, 0.22);
+}
+
+.luxitin-film::before {
+  /* Foxing: warm paper spots + edge aging */
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+      280px 220px at 18% 12%,
+      rgba(176, 106, 44, 0.18),
+      transparent 60%
+    ),
+    radial-gradient(
+      220px 180px at 78% 18%,
+      rgba(200, 164, 74, 0.16),
+      transparent 58%
+    ),
+    radial-gradient(
+      320px 260px at 82% 86%,
+      rgba(176, 106, 44, 0.14),
+      transparent 62%
+    ),
+    radial-gradient(
+      100% 90% at 50% 50%,
+      transparent 62%,
+      rgba(11, 11, 13, 0.22) 100%
+    );
+  mix-blend-mode: multiply;
+  opacity: 0.85;
+}
+
+.luxitin-film::after {
+  /* Grain + subtle scratches */
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.14;
+  mix-blend-mode: overlay;
+  background-image: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.07) 18%,
+      transparent 40%,
+      rgba(255, 255, 255, 0.05) 62%,
+      transparent 82%,
+      rgba(255, 255, 255, 0.04) 100%
+    ),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.28'/%3E%3C/svg%3E");
+  background-size: 900px 100%, 180px 180px;
+}
+
+.luxitin-film-img {
+  filter: saturate(0.92) contrast(1.06) sepia(0.18) brightness(0.98);
+  opacity: 0.92;
 }
 
 @keyframes luxitin-flow {

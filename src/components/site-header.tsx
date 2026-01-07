@@ -12,12 +12,12 @@ export function SiteHeader() {
   const pathname = usePathname() ?? "/";
 
   return (
-    <header className="py-6">
+    <header className="py-6 luxitin-header">
       <div className="flex items-center justify-between gap-4">
         <Link
           href="/"
           aria-label="Luxitin home"
-          className="rounded-xl bg-[color:var(--obsidian)] px-3 py-2 shadow-[var(--shadow)]"
+          className="relative -ml-1 rounded-xl px-2 py-2"
         >
           <span className="luxitin-logo text-[28px] sm:text-[30px]">
             luxitin

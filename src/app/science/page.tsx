@@ -48,16 +48,14 @@ export default function SciencePage() {
         </div>
 
         <div className="lg:col-span-6">
-          <div className="luxitin-noise relative overflow-hidden rounded-[var(--radius)] border border-[color:var(--line)] bg-[color:var(--obsidian)] shadow-[var(--shadow)]">
-            <div className="absolute inset-0 luxitin-hairlines opacity-60" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/25 to-black/10" />
+          <div className="luxitin-film luxitin-noise rotate-1">
             <div className="relative h-[420px] sm:h-[520px]">
               <Image
                 src={hair04}
                 alt="Smooth, glossy hair with a clean luxury silhouette"
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"
-                className="object-cover opacity-90"
+                className="object-cover luxitin-film-img"
                 priority
               />
             </div>
@@ -233,16 +231,14 @@ export default function SciencePage() {
         </div>
 
         <div className="lg:col-span-6">
-          <div className="luxitin-noise relative overflow-hidden rounded-[var(--radius)] border border-[color:var(--line)] bg-[color:var(--obsidian)] shadow-[var(--shadow)]">
-            <div className="absolute inset-0 luxitin-hairlines opacity-55" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/10" />
+          <div className="luxitin-film luxitin-noise -rotate-1">
             <div className="relative h-[420px] sm:h-[520px]">
               <Image
                 src={hair07}
                 alt="Hair with deep shine and soft movement"
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"
-                className="object-cover opacity-90"
+                className="object-cover luxitin-film-img"
               />
             </div>
           </div>

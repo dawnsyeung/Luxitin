@@ -64,16 +64,14 @@ export default function HomePage() {
         </div>
 
         <div className="lg:col-span-6">
-          <div className="luxitin-noise relative overflow-hidden rounded-[var(--radius)] border border-[color:var(--line)] bg-[color:var(--obsidian)] shadow-[var(--shadow)]">
-            <div className="absolute inset-0 luxitin-hairlines opacity-70" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/20 to-black/10" />
+          <div className="luxitin-film luxitin-noise -rotate-1">
             <div className="relative h-[520px] sm:h-[640px]">
               <Image
                 src={hair01}
                 alt="Luxury hair with glossy waves in evening light"
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"
-                className="object-cover opacity-90"
+                className="object-cover luxitin-film-img"
                 priority
               />
             </div>
@@ -195,15 +193,14 @@ export default function HomePage() {
           </div>
 
           <div className="lg:col-span-5">
-            <div className="relative overflow-hidden rounded-[var(--radius)] border border-white/10 bg-white/5">
-              <div className="absolute inset-0 luxitin-hairlines opacity-40" />
+            <div className="luxitin-film luxitin-noise rotate-1">
               <div className="relative h-[320px]">
                 <Image
                   src={hair03}
                   alt="Polished curls with deep shine"
                   fill
                   sizes="(min-width: 1024px) 40vw, 100vw"
-                  className="object-cover opacity-85"
+                  className="object-cover luxitin-film-img"
                 />
               </div>
             </div>
@@ -279,47 +276,72 @@ export default function HomePage() {
         </div>
 
         <div className="mt-8 grid gap-4 lg:grid-cols-12">
-          <div className="luxitin-noise relative overflow-hidden rounded-[var(--radius)] border border-[color:var(--line)] bg-[color:var(--obsidian)] shadow-[var(--shadow)] lg:col-span-6">
-            <div className="absolute inset-0 luxitin-hairlines opacity-55" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/20 to-black/10" />
+          <div className="luxitin-film luxitin-noise -rotate-2 lg:col-span-6">
             <div className="relative h-[360px] sm:h-[420px]">
               <Image
                 src={hair02}
                 alt="Wind-swept hair with sunlit gloss"
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"
-                className="object-cover opacity-88"
+                className="object-cover luxitin-film-img"
               />
             </div>
           </div>
 
           <div className="grid gap-4 lg:col-span-6 sm:grid-cols-2">
-            <div className="luxitin-noise relative overflow-hidden rounded-[var(--radius)] border border-[color:var(--line)] bg-[color:var(--obsidian)] shadow-[var(--shadow)]">
-              <div className="absolute inset-0 luxitin-hairlines opacity-55" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/10" />
+            <div className="luxitin-film luxitin-noise rotate-1">
               <div className="relative h-[260px] sm:h-[320px]">
                 <Image
                   src={hair05}
                   alt="Glossy hair in motion at golden hour"
                   fill
                   sizes="(min-width: 1024px) 25vw, 100vw"
-                  className="object-cover opacity-88"
+                  className="object-cover luxitin-film-img"
                 />
               </div>
             </div>
 
-            <div className="luxitin-noise relative overflow-hidden rounded-[var(--radius)] border border-[color:var(--line)] bg-[color:var(--obsidian)] shadow-[var(--shadow)]">
-              <div className="absolute inset-0 luxitin-hairlines opacity-55" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/10" />
+            <div className="luxitin-film luxitin-noise -rotate-1">
               <div className="relative h-[260px] sm:h-[320px]">
                 <Image
                   src={hair06}
                   alt="Smooth hair texture with warm highlights"
                   fill
                   sizes="(min-width: 1024px) 25vw, 100vw"
-                  className="object-cover opacity-88"
+                  className="object-cover luxitin-film-img"
                 />
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mt-14 grid gap-6 lg:grid-cols-12 lg:items-center">
+        <div className="lg:col-span-7">
+          <div className="luxitin-surface p-7 sm:p-8">
+            <p className="text-xs font-semibold tracking-[0.26em] uppercase text-[color:var(--muted)]">
+              Editorial detail
+            </p>
+            <h2 className="mt-3 text-2xl font-semibold tracking-tight sm:text-3xl">
+              Old-world luxury, modern biotech.
+            </h2>
+            <p className="mt-4 max-w-prose text-sm leading-relaxed text-[color:var(--muted)]">
+              We frame the imagery like classic film contact sheets—softened,
+              aged, and luminous—because the material story is the same:
+              precision refinement that still feels timeless.
+            </p>
+          </div>
+        </div>
+        <div className="lg:col-span-5">
+          <div className="luxitin-film luxitin-noise rotate-2">
+            <div className="relative h-[360px] sm:h-[420px]">
+              <Image
+                src={hair09}
+                alt="Classic portrait with a refined, luminous finish"
+                fill
+                sizes="(min-width: 1024px) 40vw, 100vw"
+                className="object-cover luxitin-film-img"
+              />
             </div>
           </div>
         </div>
