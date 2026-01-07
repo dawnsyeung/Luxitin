@@ -16,9 +16,12 @@ export function SiteHeader() {
       <div className="flex items-center justify-between gap-4">
         <Link
           href="/"
-          className="text-base font-semibold tracking-[0.24em] uppercase"
+          aria-label="Luxitin home"
+          className="rounded-xl bg-[color:var(--obsidian)] px-3 py-2 shadow-[var(--shadow)]"
         >
-          Luxitin
+          <span className="luxitin-logo text-[22px]" data-text="luxitin">
+            luxitin
+          </span>
         </Link>
         <nav aria-label="Primary" className="flex items-center gap-6 text-sm">
           <Link

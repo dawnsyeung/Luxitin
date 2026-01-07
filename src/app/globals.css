@@ -133,6 +133,40 @@ body {
   background-size: 180px 180px;
 }
 
+/* Wordmark logo (reference-style chromatic offset) */
+.luxitin-logo {
+  position: relative;
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-weight: 850;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  text-transform: lowercase;
+  color: rgba(255, 255, 255, 0.98);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.55);
+}
+
+.luxitin-logo::before,
+.luxitin-logo::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  opacity: 0.9;
+  filter: blur(0.15px);
+}
+
+.luxitin-logo::before {
+  color: rgba(0, 215, 255, 0.95); /* cyan */
+  transform: translate(-2px, -1px);
+}
+
+.luxitin-logo::after {
+  color: rgba(255, 40, 120, 0.95); /* magenta */
+  transform: translate(2px, 1px);
+}
+
 @keyframes luxitin-flow {
   0% {
     background-position: 0% 50%;
