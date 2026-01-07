@@ -1,20 +1,24 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #fbfaf7; /* soft ivory */
-  --bg-elevated: rgba(255, 255, 255, 0.58);
+  --bg: #f6efe2; /* warm champagne ivory */
+  --bg-elevated: rgba(255, 245, 228, 0.66);
   --fg: #0f0f10;
   --muted: rgba(15, 15, 16, 0.65);
   --line: rgba(15, 15, 16, 0.12);
 
-  --champagne: #e7ddc8;
-  --gold: #bda46a;
-  --bronze: #b07a4a;
+  --champagne: #f0e2c6;
+  --gold: #c8a44a;
+  --bronze: #b06a2c;
   --silver: #c8cdd6;
   --obsidian: #0b0b0d;
 
   --radius: 18px;
   --shadow: 0 20px 80px rgba(23, 23, 23, 0.12);
+
+  /* Canela is proprietary; this stack uses it if available. */
+  --font-canela: Canela, "Canela Text", "Canela Deck", var(--font-serif),
+    var(--font-sans), ui-serif, Georgia, serif;
 }
 
 html,
@@ -25,18 +29,23 @@ body {
 body {
   background: radial-gradient(
       1200px 600px at 20% 0%,
-      rgba(231, 221, 200, 0.38),
-      transparent 60%
+      rgba(200, 164, 74, 0.42),
+      transparent 58%
     ),
     radial-gradient(
       900px 500px at 90% 10%,
-      rgba(200, 205, 214, 0.3),
-      transparent 55%
+      rgba(176, 106, 44, 0.34),
+      transparent 56%
     ),
     radial-gradient(
       900px 600px at 50% 95%,
-      rgba(176, 122, 74, 0.14),
+      rgba(200, 164, 74, 0.18),
       transparent 62%
+    ),
+    radial-gradient(
+      1100px 700px at 0% 95%,
+      rgba(176, 106, 44, 0.14),
+      transparent 58%
     ),
     var(--bg);
   color: var(--fg);

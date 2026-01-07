@@ -17,7 +17,7 @@ export default function SciencePage() {
           </p>
           <h1 className="mt-4 text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl">
             Chitin & chitosan for hair:{" "}
-            <span className="luxitin-metal font-[family-name:var(--font-serif)]">
+            <span className="luxitin-metal font-[family-name:var(--font-canela)]">
               a couture biopolymer finish
             </span>
             .

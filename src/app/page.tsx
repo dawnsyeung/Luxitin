@@ -11,7 +11,7 @@ export default function HomePage() {
           </p>
           <h1 className="mt-4 text-4xl font-semibold leading-[1.03] tracking-tight sm:text-6xl">
             Hair that moves like liquid silk—powered by{" "}
-            <span className="luxitin-metal font-[family-name:var(--font-serif)]">
+            <span className="luxitin-metal font-[family-name:var(--font-canela)]">
               chitin & chitosan
             </span>
             .

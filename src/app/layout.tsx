@@ -53,7 +53,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${serif.variable} ${sans.variable}`}>
-      <body className="min-h-dvh font-[family-name:var(--font-sans)]">
+      <body className="min-h-dvh font-[family-name:var(--font-canela)]">
         <a
           href="#content"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-xl focus:bg-white/90 focus:px-4 focus:py-2 focus:text-sm focus:shadow"
