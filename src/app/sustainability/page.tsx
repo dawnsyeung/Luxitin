@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import hair05 from "@/components/luxitin_hair_05.png";
 import hair08 from "@/components/luxitin_hair_08.png";
+import asp04 from "@/components/luxitin_aspirational_04.png";
 
 export const metadata = {
   title: "Sustainability",
@@ -262,6 +263,38 @@ export default function SustainabilityPage() {
             chitin/chitosan processing and the sustainability rationale behind
             insect-biotech approaches.
           </p>
+        </div>
+      </section>
+
+      <section className="mt-14 grid gap-6 lg:grid-cols-12 lg:items-center">
+        <div className="lg:col-span-5">
+          <div className="luxitin-surface p-7 sm:p-8">
+            <p className="text-xs font-semibold tracking-[0.26em] uppercase text-[color:var(--muted)]">
+              Responsible luxury
+            </p>
+            <h2 className="mt-3 text-2xl font-semibold tracking-tight sm:text-3xl">
+              The aspiration should match the supply chain.
+            </h2>
+            <p className="mt-4 max-w-prose text-sm leading-relaxed text-[color:var(--muted)]">
+              Sustainability isn’t a “nice-to-have”—it’s a quality signal.
+              Traceable inputs, controlled production, and high-purity targets
+              are what make results consistent and the story credible.
+            </p>
+          </div>
+        </div>
+
+        <div className="lg:col-span-7">
+          <div className="overflow-hidden rounded-[var(--radius)] border border-[color:var(--line)] bg-white/5 shadow-[var(--shadow)]">
+            <div className="relative h-[420px] sm:h-[520px]">
+              <Image
+                src={asp04}
+                alt="Aspirational coastal moment at golden hour"
+                fill
+                sizes="(min-width: 1024px) 58vw, 100vw"
+                className="object-cover"
+              />
+            </div>
+          </div>
         </div>
       </section>
 

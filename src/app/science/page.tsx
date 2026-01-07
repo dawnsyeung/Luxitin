@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import hair04 from "@/components/luxitin_hair_04.png";
 import hair07 from "@/components/luxitin_hair_07.png";
+import asp03 from "@/components/luxitin_aspirational_03.png";
 
 export const metadata = {
   title: "Science",
@@ -186,6 +187,37 @@ export default function SciencePage() {
                 materials. We design toward high-purity, consistent polymers so
                 the hair remains light, glossy, and in motion.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mt-14 grid gap-6 lg:grid-cols-12 lg:items-center">
+        <div className="lg:col-span-6">
+          <div className="luxitin-surface p-7 sm:p-8">
+            <p className="text-xs font-semibold tracking-[0.26em] uppercase text-[color:var(--muted)]">
+              Sensorial design
+            </p>
+            <h2 className="mt-3 text-2xl font-semibold tracking-tight sm:text-3xl">
+              Performance you can feel—elegance you can see.
+            </h2>
+            <p className="mt-4 max-w-prose text-sm leading-relaxed text-[color:var(--muted)]">
+              The “luxury” outcome of chitosan isn’t just chemistry—it’s how the
+              polymer is refined and tuned so it deposits evenly, feels clean,
+              and leaves hair light and luminous rather than coated.
+            </p>
+          </div>
+        </div>
+        <div className="lg:col-span-6">
+          <div className="overflow-hidden rounded-[var(--radius)] border border-[color:var(--line)] bg-white/5 shadow-[var(--shadow)]">
+            <div className="relative h-[420px] sm:h-[520px]">
+              <Image
+                src={asp03}
+                alt="Aspirational golden-hour portrait with natural hair texture"
+                fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="object-cover"
+              />
             </div>
           </div>
         </div>

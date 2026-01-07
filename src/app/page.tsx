@@ -4,9 +4,12 @@ import Link from "next/link";
 import hair01 from "@/components/luxitin_hair_01.png";
 import hair02 from "@/components/luxitin_hair_02.png";
 import hair03 from "@/components/luxitin_hair_03.png";
-import hair05 from "@/components/luxitin_hair_05.png";
 import hair06 from "@/components/luxitin_hair_06.png";
 import hair09 from "@/components/luxitin_hair_09.png";
+
+import asp01 from "@/components/luxitin_aspirational_01.png";
+import asp02 from "@/components/luxitin_aspirational_02.png";
+import asp05 from "@/components/luxitin_aspirational_05.png";
 
 export default function HomePage() {
   return (
@@ -84,6 +87,48 @@ export default function HomePage() {
               Chitosan’s natural affinity for the hair fiber helps it lay down a
               micro-thin, flexible film—polishing the cuticle without stiffness.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="mt-14 grid gap-6 lg:grid-cols-12 lg:items-center">
+        <div className="lg:col-span-5">
+          <p className="text-xs font-semibold tracking-[0.26em] uppercase text-[color:var(--muted)]">
+            Aspirational
+          </p>
+          <h2 className="mt-3 text-2xl font-semibold tracking-tight sm:text-3xl">
+            Luxury is a mood—light, air, and hair in motion.
+          </h2>
+          <p className="mt-4 max-w-prose text-sm leading-relaxed text-[color:var(--muted)]">
+            These are the moments Luxitin is designed for: effortless movement,
+            reflective shine, and that clean, “finished” feel—without the weight.
+          </p>
+        </div>
+
+        <div className="lg:col-span-7">
+          <div className="grid gap-4 sm:grid-cols-2">
+            <div className="overflow-hidden rounded-[var(--radius)] border border-[color:var(--line)] bg-white/5 shadow-[var(--shadow)]">
+              <div className="relative h-[320px] sm:h-[360px]">
+                <Image
+                  src={asp01}
+                  alt="Aspirational sunset scene with glossy hair and warm light"
+                  fill
+                  sizes="(min-width: 1024px) 33vw, 100vw"
+                  className="object-cover"
+                />
+              </div>
+            </div>
+            <div className="overflow-hidden rounded-[var(--radius)] border border-[color:var(--line)] bg-white/5 shadow-[var(--shadow)]">
+              <div className="relative h-[320px] sm:h-[360px]">
+                <Image
+                  src={asp05}
+                  alt="Aspirational terrace moment at golden hour"
+                  fill
+                  sizes="(min-width: 1024px) 33vw, 100vw"
+                  className="object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -291,8 +336,8 @@ export default function HomePage() {
             <div className="overflow-hidden rounded-[var(--radius)] border border-[color:var(--line)] bg-white/5 shadow-[var(--shadow)]">
               <div className="relative h-[260px] sm:h-[320px]">
                 <Image
-                  src={hair05}
-                  alt="Glossy hair in motion at golden hour"
+                  src={asp02}
+                  alt="Aspirational yacht scene with hair in motion"
                   fill
                   sizes="(min-width: 1024px) 25vw, 100vw"
                   className="object-cover"
