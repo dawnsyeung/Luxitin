@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #f6f0df; /* warm champagne base */
-  --bg-elevated: rgba(255, 255, 255, 0.58);
+  --bg: #f1e2b7; /* warm gold base (noticeably non-white) */
+  --bg-elevated: rgba(247, 235, 205, 0.7); /* champagne glass surface */
   --fg: #0f0f10;
   --muted: rgba(15, 15, 16, 0.65);
   --line: rgba(15, 15, 16, 0.12);
@@ -20,6 +20,10 @@
 html,
 body {
   height: 100%;
+}
+
+html {
+  background-color: var(--bg);
 }
 
 body {
@@ -59,6 +63,7 @@ body {
       rgba(255, 255, 255, 0.08) 86%,
       transparent 100%
     );
+  background-blend-mode: normal, normal, normal, soft-light, overlay;
   background-position:
     18% -10%,
     95% 8%,
@@ -71,6 +76,7 @@ body {
     auto,
     240% 240%,
     320% 100%;
+  background-attachment: fixed;
   animation: luxitin-gold-shimmer 18s ease-in-out infinite;
   color: var(--fg);
   text-rendering: geometricPrecision;
