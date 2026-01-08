@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -15,28 +14,13 @@ export function SiteHeader() {
   return (
     <header className="py-6">
       <div className="flex items-center justify-between gap-4">
-        <Link href="/" className="flex items-center gap-3">
-          <span className="relative h-9 w-9 overflow-hidden rounded-xl border border-[color:var(--line)] bg-white/40">
-            <Image
-              src="/NEWLOGO.png"
-              alt="Luxitin"
-              fill
-              className="object-contain p-1.5"
-              priority
-            />
-          </span>
-          <span className="text-base font-semibold tracking-[0.24em] uppercase">
-            Luxitin
-          </span>
+        <Link
+          href="/"
+          className="text-base font-semibold tracking-[0.24em] uppercase"
+        >
+          Luxitin
         </Link>
         <nav aria-label="Primary" className="flex items-center gap-6 text-sm">
-          <Link
-            href="/products"
-            aria-current={isActive(pathname, "/products") ? "page" : undefined}
-            className="text-[color:var(--muted)] hover:text-[color:var(--fg)] aria-[current=page]:text-[color:var(--fg)]"
-          >
-            Products
-          </Link>
           <Link
             href="/science"
             aria-current={isActive(pathname, "/science") ? "page" : undefined}
