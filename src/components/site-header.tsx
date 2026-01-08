@@ -16,15 +16,14 @@ export function SiteHeader() {
     <header className="py-6">
       <div className="flex items-center justify-between gap-4">
         <Link href="/" className="flex items-center">
-          <span className="relative h-12 w-12 overflow-hidden rounded-2xl border border-[color:var(--line)] bg-[color:var(--bg-elevated)] shadow-[var(--shadow)]">
-            <Image
-              src="/NEWLOGO.png"
-              alt="Luxitin"
-              fill
-              className="object-contain p-2"
-              priority
-            />
-          </span>
+          <Image
+            src="/NEWLOGO.png"
+            alt="Luxitin"
+            width={52}
+            height={52}
+            className="h-12 w-12 object-contain"
+            priority
+          />
         </Link>
         <nav aria-label="Primary" className="flex items-center gap-6 text-sm">
           <Link
