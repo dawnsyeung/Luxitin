@@ -1,20 +1,21 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #fbfaf7; /* soft ivory */
-  --bg-elevated: rgba(255, 255, 255, 0.58);
-  --fg: #0f0f10;
-  --muted: rgba(15, 15, 16, 0.65);
-  --line: rgba(15, 15, 16, 0.12);
+  /* Dark brown-gold theme */
+  --bg: #241406; /* dark brown-gold */
+  --bg-elevated: rgba(44, 26, 10, 0.78);
+  --fg: #f6e6b4; /* bright light gold */
+  --muted: rgba(246, 230, 180, 0.72);
+  --line: rgba(246, 230, 180, 0.18);
 
   --champagne: #e7ddc8;
-  --gold: #bda46a;
+  --gold: #f1d58b;
   --bronze: #b07a4a;
   --silver: #c8cdd6;
-  --obsidian: #0b0b0d;
+  --obsidian: #120802;
 
   --radius: 18px;
-  --shadow: 0 20px 80px rgba(23, 23, 23, 0.12);
+  --shadow: 0 26px 90px rgba(0, 0, 0, 0.38);
 }
 
 html,
@@ -23,28 +24,44 @@ body {
 }
 
 body {
+  position: relative;
   background: radial-gradient(
-      1200px 600px at 20% 0%,
-      rgba(231, 221, 200, 0.38),
-      transparent 60%
-    ),
-    radial-gradient(
-      900px 500px at 90% 10%,
-      rgba(200, 205, 214, 0.3),
-      transparent 55%
-    ),
-    radial-gradient(
-      900px 600px at 50% 95%,
-      rgba(176, 122, 74, 0.14),
+      1200px 650px at 18% 0%,
+      rgba(241, 213, 139, 0.14),
       transparent 62%
+    ),
+    radial-gradient(
+      900px 520px at 92% 10%,
+      rgba(176, 122, 74, 0.16),
+      transparent 62%
+    ),
+    radial-gradient(
+      900px 620px at 50% 98%,
+      rgba(200, 205, 214, 0.08),
+      transparent 70%
     ),
     var(--bg);
   color: var(--fg);
   text-rendering: geometricPrecision;
 }
 
+/* Subtle brand watermark across all pages */
+body::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.035;
+  background-image: url("/NEWLOGO.png");
+  background-repeat: repeat;
+  background-size: 160px 160px;
+  background-position: 20px 10px;
+  mix-blend-mode: soft-light;
+}
+
 ::selection {
-  background: rgba(189, 164, 106, 0.28);
+  background: rgba(241, 213, 139, 0.22);
 }
 
 /* Subtle hair-like shimmer line */
@@ -64,7 +81,7 @@ body {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  backdrop-filter: blur(14px);
+  backdrop-filter: blur(16px);
 }
 
 .luxitin-metal {
@@ -83,18 +100,18 @@ body {
 
 .luxitin-dark {
   background: radial-gradient(
-      800px 400px at 20% 0%,
-      rgba(189, 164, 106, 0.16),
+      900px 420px at 18% 0%,
+      rgba(241, 213, 139, 0.16),
       transparent 60%
     ),
     radial-gradient(
-      700px 500px at 90% 10%,
-      rgba(200, 205, 214, 0.14),
+      700px 520px at 92% 10%,
+      rgba(176, 122, 74, 0.18),
       transparent 62%
     ),
-    linear-gradient(180deg, rgba(11, 11, 13, 0.92), rgba(11, 11, 13, 0.96));
-  color: rgba(255, 255, 255, 0.92);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+    linear-gradient(180deg, rgba(18, 8, 2, 0.92), rgba(18, 8, 2, 0.96));
+  color: var(--fg);
+  border: 1px solid rgba(246, 230, 180, 0.12);
 }
 
 .luxitin-hairlines {

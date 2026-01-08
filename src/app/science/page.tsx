@@ -12,9 +12,19 @@ export default function SciencePage() {
     <div className="py-10 sm:py-16">
       <section className="grid gap-8 lg:grid-cols-12 lg:items-center">
         <div className="lg:col-span-6">
-          <p className="text-xs font-semibold tracking-[0.26em] uppercase text-[color:var(--muted)]">
-            The Science Behind Luxitin
-          </p>
+          <div className="flex items-center gap-3">
+            <Image
+              src="/NEWLOGO.png"
+              alt="Luxitin"
+              width={34}
+              height={34}
+              className="h-8 w-8 object-contain"
+              priority
+            />
+            <p className="text-xs font-semibold tracking-[0.26em] uppercase text-[color:var(--muted)]">
+              The Science Behind Luxitin
+            </p>
+          </div>
           <h1 className="mt-4 text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl">
             Purity and Power Unleashed
           </h1>
@@ -33,13 +43,13 @@ export default function SciencePage() {
           <div className="mt-7 flex flex-wrap gap-3">
             <Link
               href="/products"
-              className="inline-flex items-center justify-center rounded-xl bg-[color:var(--obsidian)] px-5 py-3 text-sm font-medium text-white shadow-[var(--shadow)]"
+              className="inline-flex items-center justify-center rounded-xl bg-[color:var(--gold)] px-5 py-3 text-sm font-medium text-[color:var(--obsidian)] shadow-[var(--shadow)]"
             >
               Shop products
             </Link>
             <Link
               href="/sustainability"
-              className="inline-flex items-center justify-center rounded-xl border border-[color:var(--line)] bg-white/40 px-5 py-3 text-sm font-medium backdrop-blur"
+              className="inline-flex items-center justify-center rounded-xl border border-[color:var(--line)] bg-[color:var(--bg-elevated)] px-5 py-3 text-sm font-medium"
             >
               Why BSFL is more sustainable
             </Link>
@@ -114,7 +124,7 @@ export default function SciencePage() {
               Visual Aid: Hair Microscopy (Before / After)
             </h2>
             <div className="mt-5 grid gap-4">
-              <div className="overflow-hidden rounded-[calc(var(--radius)-6px)] border border-[color:var(--line)] bg-white/25">
+              <div className="overflow-hidden rounded-[calc(var(--radius)-6px)] border border-[color:var(--line)] bg-[color:var(--bg-elevated)]">
                 <Image
                   src="/images/hair-microscopy-before.svg"
                   alt="Stylized microscopy view of damaged hair cuticle (before)"
@@ -123,7 +133,7 @@ export default function SciencePage() {
                   className="h-auto w-full"
                 />
               </div>
-              <div className="overflow-hidden rounded-[calc(var(--radius)-6px)] border border-[color:var(--line)] bg-white/25">
+              <div className="overflow-hidden rounded-[calc(var(--radius)-6px)] border border-[color:var(--line)] bg-[color:var(--bg-elevated)]">
                 <Image
                   src="/images/hair-microscopy-after.svg"
                   alt="Stylized microscopy view of smoother hair cuticle (after)"
@@ -144,13 +154,13 @@ export default function SciencePage() {
       <section className="mt-14 rounded-[var(--radius)] p-7 sm:p-10 luxitin-dark luxitin-noise">
         <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
           <div className="lg:col-span-7">
-            <p className="text-xs font-semibold tracking-[0.26em] uppercase text-white/70">
+            <p className="text-xs font-semibold tracking-[0.26em] uppercase text-[color:var(--muted)]">
               Advanced French Biotechnology
             </p>
-            <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+            <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[color:var(--fg)] sm:text-3xl">
               Achieving Superior Purity
             </h2>
-            <p className="mt-4 max-w-prose text-sm leading-relaxed text-white/75">
+            <p className="mt-4 max-w-prose text-sm leading-relaxed text-[color:var(--muted)]">
               Traditional chitin extraction from shrimp or crab shells often
               results in impurities like heavy metals or allergens, with purity
               levels around 80-90%. Our advanced French biotechnology uses
@@ -162,27 +172,27 @@ export default function SciencePage() {
               associated with conventional acid and base treatments. This
               involves:
             </p>
-            <ol className="mt-5 space-y-3 text-sm leading-relaxed text-white/80">
+            <ol className="mt-5 space-y-3 text-sm leading-relaxed text-[color:var(--muted)]">
               <li>
-                <strong className="text-white">
+                <strong className="text-[color:var(--fg)]">
                   Defatting and Demineralization:
                 </strong>{" "}
                 Removing lipids and minerals from BSFL cuticles without harsh
                 acids, preserving bioactivity.
               </li>
               <li>
-                <strong className="text-white">Deproteinization:</strong>{" "}
+                <strong className="text-[color:var(--fg)]">Deproteinization:</strong>{" "}
                 Enzymatic breakdown using proteases to eliminate proteins,
                 yielding a clean, high-molecular-weight chitin – milder and
                 more eco-friendly than chemical alternatives.
               </li>
               <li>
-                <strong className="text-white">Conversion to Chitosan:</strong>{" "}
+                <strong className="text-[color:var(--fg)]">Conversion to Chitosan:</strong>{" "}
                 Optional deacetylation for enhanced solubility and versatility
                 in formulations.
               </li>
             </ol>
-            <p className="mt-5 max-w-prose text-sm leading-relaxed text-white/75">
+            <p className="mt-5 max-w-prose text-sm leading-relaxed text-[color:var(--muted)]">
               This results in a non-toxic, biocompatible ingredient that’s
               hypoallergenic and stable, ensuring consistent performance in
               products. Independent lab tests confirm Luxitin’s low impurity
@@ -191,7 +201,7 @@ export default function SciencePage() {
           </div>
 
           <div className="lg:col-span-5">
-            <div className="overflow-hidden rounded-[var(--radius)] border border-white/10 bg-white/5">
+            <div className="overflow-hidden rounded-[var(--radius)] border border-[color:var(--line)] bg-[color:var(--bg-elevated)]">
               <Image
                 src="/images/biotech-process.svg"
                 alt="Diagram of the Luxitin extraction and refinement process"

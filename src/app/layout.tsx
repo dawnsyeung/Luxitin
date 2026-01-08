@@ -58,11 +58,11 @@ export default function RootLayout({
       <body className="min-h-dvh font-[family-name:var(--font-sans)]">
         <a
           href="#content"
-          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-xl focus:bg-white/90 focus:px-4 focus:py-2 focus:text-sm focus:shadow"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-xl focus:bg-[color:var(--bg-elevated)] focus:px-4 focus:py-2 focus:text-sm focus:text-[color:var(--fg)] focus:shadow"
         >
           Skip to content
         </a>
-        <div className="mx-auto flex min-h-dvh max-w-[1400px] flex-col px-4 sm:px-6 lg:px-10">
+        <div className="relative z-10 mx-auto flex min-h-dvh max-w-[1400px] flex-col px-4 sm:px-6 lg:px-10">
           <SiteHeader />
           <main id="content" className="flex-1">
             {children}

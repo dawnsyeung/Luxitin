@@ -81,9 +81,19 @@ export default function ProductsPage() {
     <div className="py-10 sm:py-16">
       <section className="grid gap-8 lg:grid-cols-12 lg:items-center">
         <div className="lg:col-span-6">
-          <p className="text-xs font-semibold tracking-[0.26em] uppercase text-[color:var(--muted)]">
-            Our Products
-          </p>
+          <div className="flex items-center gap-3">
+            <Image
+              src="/NEWLOGO.png"
+              alt="Luxitin"
+              width={34}
+              height={34}
+              className="h-8 w-8 object-contain"
+              priority
+            />
+            <p className="text-xs font-semibold tracking-[0.26em] uppercase text-[color:var(--muted)]">
+              Our Products
+            </p>
+          </div>
           <h1 className="mt-4 text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl">
             Elevate Your Hair with Luxitin
           </h1>
@@ -99,13 +109,13 @@ export default function ProductsPage() {
           <div className="mt-7 flex flex-wrap gap-3">
             <Link
               href="/science"
-              className="inline-flex items-center justify-center rounded-xl bg-[color:var(--obsidian)] px-5 py-3 text-sm font-medium text-white shadow-[var(--shadow)]"
+              className="inline-flex items-center justify-center rounded-xl bg-[color:var(--gold)] px-5 py-3 text-sm font-medium text-[color:var(--obsidian)] shadow-[var(--shadow)]"
             >
               Explore the science
             </Link>
             <Link
               href="/sustainability"
-              className="inline-flex items-center justify-center rounded-xl border border-[color:var(--line)] bg-white/40 px-5 py-3 text-sm font-medium backdrop-blur"
+              className="inline-flex items-center justify-center rounded-xl border border-[color:var(--line)] bg-[color:var(--bg-elevated)] px-5 py-3 text-sm font-medium"
             >
               Sustainability story
             </Link>
@@ -144,7 +154,7 @@ export default function ProductsPage() {
         <div className="mt-8 grid gap-4 lg:grid-cols-2">
           {products.map((p) => (
             <article key={p.name} className="luxitin-surface overflow-hidden">
-              <div className="border-b border-[color:var(--line)] bg-white/25 p-5">
+              <div className="border-b border-[color:var(--line)] bg-[color:var(--bg-elevated)] p-5">
                 <Image
                   src={p.image}
                   alt={`${p.name} packaging illustration`}
@@ -185,13 +195,13 @@ export default function ProductsPage() {
 
       <section className="mt-14">
         <div className="luxitin-dark luxitin-noise rounded-[var(--radius)] p-7 sm:p-10">
-          <p className="text-xs font-semibold tracking-[0.26em] uppercase text-white/70">
+          <p className="text-xs font-semibold tracking-[0.26em] uppercase text-[color:var(--muted)]">
             Call to Action
           </p>
-          <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+          <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[color:var(--fg)] sm:text-3xl">
             Shop now and experience the Luxitin difference.
           </h2>
-          <p className="mt-4 max-w-prose text-sm leading-relaxed text-white/75">
+          <p className="mt-4 max-w-prose text-sm leading-relaxed text-[color:var(--muted)]">
             Our products are cruelty-free, vegan, and backed by Luxitin’s purity
             for superior performance – all in packaging that’s as innovative as
             the ingredient inside.
@@ -199,13 +209,13 @@ export default function ProductsPage() {
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
               href="/#contact"
-              className="inline-flex items-center justify-center rounded-xl bg-white px-5 py-3 text-sm font-medium text-[color:var(--obsidian)]"
+              className="inline-flex items-center justify-center rounded-xl bg-[color:var(--gold)] px-5 py-3 text-sm font-medium text-[color:var(--obsidian)] shadow-[var(--shadow)]"
             >
               Contact us
             </Link>
             <Link
               href="/science"
-              className="inline-flex items-center justify-center rounded-xl bg-white/10 px-5 py-3 text-sm font-medium text-white ring-1 ring-white/15 hover:bg-white/15"
+              className="inline-flex items-center justify-center rounded-xl border border-[color:var(--line)] bg-[color:var(--bg-elevated)] px-5 py-3 text-sm font-medium text-[color:var(--fg)] hover:bg-[color:var(--bg-elevated)]/80"
             >
               Learn how Luxitin works
             </Link>

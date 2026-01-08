@@ -13,18 +13,28 @@ export default function HomePage() {
             priority
             className="object-cover opacity-95"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/35 to-black/25" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--obsidian)]/85 via-[color:var(--obsidian)]/45 to-[color:var(--obsidian)]/35" />
         </div>
 
         <div className="relative grid min-h-[calc(100dvh-220px)] items-end p-7 sm:p-10 lg:grid-cols-12 lg:items-center">
           <div className="lg:col-span-7">
-            <p className="text-xs font-semibold tracking-[0.26em] uppercase text-white/70">
-              Discover Luxitin
-            </p>
-            <h1 className="mt-4 text-4xl font-semibold leading-[1.03] tracking-tight text-white sm:text-6xl">
+            <div className="flex items-center gap-3">
+              <Image
+                src="/NEWLOGO.png"
+                alt="Luxitin"
+                width={36}
+                height={36}
+                className="h-9 w-9 object-contain"
+                priority
+              />
+              <p className="text-xs font-semibold tracking-[0.26em] uppercase text-[color:var(--muted)]">
+                Discover Luxitin
+              </p>
+            </div>
+            <h1 className="mt-4 text-4xl font-semibold leading-[1.03] tracking-tight text-[color:var(--fg)] sm:text-6xl">
               A Gift from Nature for Luxurious Hair
             </h1>
-            <p className="mt-5 max-w-prose text-base leading-relaxed text-white/80">
+            <p className="mt-5 max-w-prose text-base leading-relaxed text-[color:var(--muted)]">
               Welcome to Luxitin, where cutting-edge science meets sustainable
               innovation to transform your hair care routine. Derived from the
               purest chitin – a gift from nature with many valuable natural and
@@ -41,19 +51,19 @@ export default function HomePage() {
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link
                 href="/science"
-                className="inline-flex items-center justify-center rounded-xl bg-white px-5 py-3 text-sm font-medium text-[color:var(--obsidian)]"
+                className="inline-flex items-center justify-center rounded-xl bg-[color:var(--gold)] px-5 py-3 text-sm font-medium text-[color:var(--obsidian)] shadow-[var(--shadow)]"
               >
                 Explore our science
               </Link>
               <Link
                 href="/sustainability"
-                className="inline-flex items-center justify-center rounded-xl bg-white/10 px-5 py-3 text-sm font-medium text-white ring-1 ring-white/15 hover:bg-white/15"
+                className="inline-flex items-center justify-center rounded-xl border border-[color:var(--line)] bg-[color:var(--bg-elevated)] px-5 py-3 text-sm font-medium text-[color:var(--fg)] hover:bg-[color:var(--bg-elevated)]/80"
               >
                 Sustainability story
               </Link>
               <Link
                 href="/products"
-                className="inline-flex items-center justify-center rounded-xl bg-[color:var(--obsidian)] px-5 py-3 text-sm font-medium text-white ring-1 ring-white/10"
+                className="inline-flex items-center justify-center rounded-xl border border-[color:var(--line)] bg-transparent px-5 py-3 text-sm font-medium text-[color:var(--fg)] hover:bg-[color:var(--bg-elevated)]"
               >
                 Shop now
               </Link>
@@ -61,11 +71,11 @@ export default function HomePage() {
           </div>
 
           <div className="mt-10 lg:col-span-5 lg:mt-0">
-            <div className="luxitin-surface border-white/10 bg-white/5 p-6 text-white shadow-none">
-              <p className="text-xs font-semibold tracking-[0.26em] uppercase text-white/70">
+            <div className="luxitin-surface p-6 shadow-none">
+              <p className="text-xs font-semibold tracking-[0.26em] uppercase text-[color:var(--muted)]">
                 Eco-luxury, full circle
               </p>
-              <p className="mt-3 text-sm leading-relaxed text-white/80">
+              <p className="mt-3 text-sm leading-relaxed text-[color:var(--muted)]">
                 Luxitin is both the hero ingredient and the material behind our
                 biodegradable packaging—designed to protect formulas, then
                 compost back into the environment without microplastics.
@@ -169,13 +179,13 @@ export default function HomePage() {
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
               href="/products"
-              className="inline-flex items-center justify-center rounded-xl bg-[color:var(--obsidian)] px-5 py-3 text-sm font-medium text-white shadow-[var(--shadow)]"
+              className="inline-flex items-center justify-center rounded-xl bg-[color:var(--gold)] px-5 py-3 text-sm font-medium text-[color:var(--obsidian)] shadow-[var(--shadow)]"
             >
               View all products
             </Link>
             <Link
               href="/science"
-              className="inline-flex items-center justify-center rounded-xl border border-[color:var(--line)] bg-white/40 px-5 py-3 text-sm font-medium backdrop-blur"
+              className="inline-flex items-center justify-center rounded-xl border border-[color:var(--line)] bg-[color:var(--bg-elevated)] px-5 py-3 text-sm font-medium"
             >
               The science behind Luxitin
             </Link>
@@ -217,7 +227,7 @@ export default function HomePage() {
               },
             ].map((p) => (
               <div key={p.name} className="luxitin-surface overflow-hidden">
-                <div className="border-b border-[color:var(--line)] bg-white/25 p-4">
+                <div className="border-b border-[color:var(--line)] bg-[color:var(--bg-elevated)] p-4">
                   <Image
                     src={p.image}
                     alt={`${p.name} packaging illustration`}
