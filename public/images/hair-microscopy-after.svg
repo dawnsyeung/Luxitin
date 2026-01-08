@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="700" viewBox="0 0 1600 700" role="img" aria-label="Hair cuticle microscopy illustration after Luxitin">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbfaf7"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0b0b0d" stop-opacity="0.88"/>
+      <stop offset="0.5" stop-color="#0b0b0d" stop-opacity="0.70"/>
+      <stop offset="1" stop-color="#0b0b0d" stop-opacity="0.88"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e7ddc8" stop-opacity="0.00"/>
+      <stop offset="0.25" stop-color="#e7ddc8" stop-opacity="0.10"/>
+      <stop offset="0.5" stop-color="#bda46a" stop-opacity="0.22"/>
+      <stop offset="0.75" stop-color="#c8cdd6" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#c8cdd6" stop-opacity="0.00"/>
+    </linearGradient>
+    <filter id="grain" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix"
+        values="1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 0.08 0"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="700" rx="28" fill="url(#bg)"/>
+
+  <g font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial">
+    <text x="60" y="90" font-size="22" font-weight="750" fill="#0f0f10">After</text>
+    <text x="60" y="125" font-size="14" fill="#0f0f10" opacity="0.62">Smoother cuticle alignment and surface sheen (stylized)</text>
+  </g>
+
+  <!-- Hair fiber -->
+  <g transform="translate(80 170)">
+    <rect x="0" y="120" width="1440" height="240" rx="120" fill="url(#hair)"/>
+
+    <!-- Smooth, aligned cuticle scales -->
+    <g fill="#ffffff" opacity="0.08">
+      <path d="M0,170 C120,145 220,150 340,170 C470,192 560,185 700,165 C840,145 960,150 1100,172 C1240,195 1340,190 1440,170 L1440,240 L0,240 Z"/>
+      <path d="M0,310 C120,290 240,295 360,312 C500,332 600,325 740,305 C900,285 1010,292 1160,315 C1300,336 1380,330 1440,312 L1440,360 L0,360 Z" opacity="0.6"/>
+    </g>
+
+    <!-- Sheen ribbon -->
+    <rect x="60" y="175" width="1320" height="50" rx="25" fill="url(#sheen)"/>
+    <rect x="120" y="260" width="1200" height="24" rx="12" fill="url(#sheen)" opacity="0.7"/>
+
+    <!-- Minimal micro-lines -->
+    <g stroke="#c8cdd6" stroke-opacity="0.16" stroke-width="2" stroke-linecap="round">
+      <path d="M220,215 C330,200 450,218 560,205" />
+      <path d="M720,245 C820,230 940,250 1040,236" />
+      <path d="M1120,220 C1220,205 1340,225 1410,210" />
+    </g>
+  </g>
+
+  <rect width="1600" height="700" filter="url(#grain)" opacity="0.5"/>
+</svg>
+

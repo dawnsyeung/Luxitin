@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-label="Luxitin Protective Hair Serum illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#fbfaf7"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e7ddc8"/>
+      <stop offset="0.5" stop-color="#bda46a"/>
+      <stop offset="1" stop-color="#c8cdd6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="55%" cy="35%" r="60%">
+      <stop offset="0" stop-color="#c8cdd6" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#c8cdd6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="640" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="640" rx="28" fill="url(#glow)"/>
+
+  <!-- Sleek serum bottle -->
+  <g transform="translate(480 95)">
+    <rect x="95" y="-10" width="90" height="110" rx="32" fill="#c8cdd6" opacity="0.20" stroke="#0f0f10" stroke-opacity="0.08"/>
+    <rect x="112" y="-50" width="56" height="50" rx="18" fill="#bda46a" opacity="0.20" stroke="#0f0f10" stroke-opacity="0.08"/>
+    <rect x="35" y="70" width="210" height="480" rx="92" fill="#ffffff" opacity="0.78" stroke="url(#metal)" stroke-width="6"/>
+    <rect x="65" y="255" width="150" height="150" rx="34" fill="#0b0b0d" opacity="0.04" stroke="#0b0b0d" stroke-opacity="0.06"/>
+  </g>
+
+  <!-- Text -->
+  <g font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial" fill="#0f0f10">
+    <text x="70" y="110" font-size="18" font-weight="800" opacity="0.86">Luxitin Protective Hair Serum</text>
+    <text x="70" y="142" font-size="13" opacity="0.62">8% Luxitin · Eco-friendly chitin tube</text>
+  </g>
+
+  <!-- Shield icon -->
+  <g transform="translate(86 200)">
+    <path d="M60,0 L120,25 L120,70 C120,110 92,140 60,155 C28,140 0,110 0,70 L0,25 Z"
+          fill="#0b0b0d" opacity="0.05" stroke="url(#metal)" stroke-width="4"/>
+    <path d="M35,78 L52,94 L85,56" fill="none" stroke="#49b37a" stroke-opacity="0.55" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
+

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-label="Luxitin Deep Conditioning Mask illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#fbfaf7"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e7ddc8"/>
+      <stop offset="0.5" stop-color="#bda46a"/>
+      <stop offset="1" stop-color="#c8cdd6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="640" rx="28" fill="url(#bg)"/>
+
+  <!-- Jar -->
+  <g transform="translate(390 160)">
+    <rect x="70" y="0" width="380" height="90" rx="42" fill="#bda46a" opacity="0.18" stroke="#0f0f10" stroke-opacity="0.08"/>
+    <rect x="0" y="70" width="520" height="340" rx="90" fill="#ffffff" opacity="0.78" stroke="url(#metal)" stroke-width="6"/>
+    <rect x="70" y="170" width="380" height="160" rx="44" fill="#0b0b0d" opacity="0.04" stroke="#0b0b0d" stroke-opacity="0.06"/>
+  </g>
+
+  <!-- Text -->
+  <g font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial" fill="#0f0f10">
+    <text x="70" y="110" font-size="18" font-weight="800" opacity="0.86">Luxitin Deep Conditioning Mask</text>
+    <text x="70" y="142" font-size="13" opacity="0.62">10% Luxitin · Biodegradable chitin jar</text>
+  </g>
+
+  <!-- Soft waves -->
+  <g fill="none" stroke="url(#metal)" stroke-opacity="0.25" stroke-width="3">
+    <path d="M60,520 C240,430 390,480 560,380 C720,286 910,330 1140,210" />
+    <path d="M60,560 C260,470 420,520 600,410 C760,320 940,360 1140,250" opacity="0.7"/>
+  </g>
+</svg>
+

@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" role="img" aria-label="Advanced French biotechnology process diagram">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0b0d"/>
+      <stop offset="1" stop-color="#14141c"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e7ddc8"/>
+      <stop offset="0.5" stop-color="#bda46a"/>
+      <stop offset="1" stop-color="#c8cdd6"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1200" rx="34" fill="url(#bg)"/>
+  <g opacity="0.16" filter="url(#soft)">
+    <circle cx="380" cy="250" r="170" fill="#bda46a"/>
+    <circle cx="1280" cy="260" r="180" fill="#49b37a" opacity="0.8"/>
+  </g>
+
+  <g font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial" fill="#ffffff">
+    <text x="90" y="120" font-size="30" font-weight="800" opacity="0.92">Advanced French biotechnology</text>
+    <text x="90" y="160" font-size="16" opacity="0.72">Controlled enzymatic hydrolysis + separation for high-purity chitin (stylized)</text>
+  </g>
+
+  <!-- Step cards -->
+  <g font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial">
+    <!-- Step 1 -->
+    <rect x="90" y="240" width="430" height="360" rx="26" fill="#ffffff" opacity="0.08" stroke="#ffffff" stroke-opacity="0.12"/>
+    <text x="125" y="290" fill="#ffffff" font-size="14" font-weight="800" opacity="0.78">1</text>
+    <text x="155" y="290" fill="#ffffff" font-size="18" font-weight="800" opacity="0.92">Defatting & Demineralization</text>
+    <text x="125" y="330" fill="#ffffff" font-size="14" opacity="0.72">Remove lipids and minerals without harsh acids</text>
+    <text x="125" y="355" fill="#ffffff" font-size="14" opacity="0.72">Preserve bioactivity</text>
+    <!-- icon -->
+    <g transform="translate(130 410)">
+      <circle cx="70" cy="70" r="70" fill="none" stroke="url(#metal)" stroke-width="6" opacity="0.8"/>
+      <path d="M40,78 C55,40 92,30 120,40 C105,78 74,96 40,78 Z" fill="#49b37a" opacity="0.5"/>
+      <path d="M60,74 C72,58 92,52 112,54" fill="none" stroke="#c9ffd8" stroke-opacity="0.25" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- Step 2 -->
+    <rect x="585" y="240" width="430" height="360" rx="26" fill="#ffffff" opacity="0.08" stroke="#ffffff" stroke-opacity="0.12"/>
+    <text x="620" y="290" fill="#ffffff" font-size="14" font-weight="800" opacity="0.78">2</text>
+    <text x="650" y="290" fill="#ffffff" font-size="18" font-weight="800" opacity="0.92">Deproteinization (enzymatic)</text>
+    <text x="620" y="330" fill="#ffffff" font-size="14" opacity="0.72">Proteases break down proteins</text>
+    <text x="620" y="355" fill="#ffffff" font-size="14" opacity="0.72">Clean, high-molecular-weight chitin</text>
+    <!-- icon -->
+    <g transform="translate(625 410)">
+      <rect x="10" y="10" width="140" height="140" rx="24" fill="none" stroke="url(#metal)" stroke-width="6" opacity="0.8"/>
+      <path d="M40,110 C62,70 92,55 122,52" fill="none" stroke="#bda46a" stroke-opacity="0.55" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="52" cy="108" r="10" fill="#c8cdd6" opacity="0.35"/>
+      <circle cx="84" cy="84" r="10" fill="#c8cdd6" opacity="0.28"/>
+      <circle cx="116" cy="60" r="10" fill="#c8cdd6" opacity="0.22"/>
+    </g>
+
+    <!-- Step 3 -->
+    <rect x="1080" y="240" width="430" height="360" rx="26" fill="#ffffff" opacity="0.08" stroke="#ffffff" stroke-opacity="0.12"/>
+    <text x="1115" y="290" fill="#ffffff" font-size="14" font-weight="800" opacity="0.78">3</text>
+    <text x="1145" y="290" fill="#ffffff" font-size="18" font-weight="800" opacity="0.92">Optional: Convert to Chitosan</text>
+    <text x="1115" y="330" fill="#ffffff" font-size="14" opacity="0.72">Deacetylation increases solubility</text>
+    <text x="1115" y="355" fill="#ffffff" font-size="14" opacity="0.72">Formulation versatility</text>
+    <!-- icon -->
+    <g transform="translate(1120 410)">
+      <path d="M40,140 C40,90 80,50 130,50 C130,95 95,135 40,140 Z" fill="#bda46a" opacity="0.28" stroke="url(#metal)" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M60,124 C70,92 95,74 120,70" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Arrows -->
+  <g fill="none" stroke="url(#metal)" stroke-opacity="0.65" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M520,420 L585,420" />
+    <path d="M560,395 L585,420 L560,445" />
+    <path d="M1015,420 L1080,420" />
+    <path d="M1055,395 L1080,420 L1055,445" />
+  </g>
+
+  <!-- Outcome -->
+  <rect x="90" y="680" width="1420" height="420" rx="30" fill="#ffffff" opacity="0.06" stroke="#ffffff" stroke-opacity="0.10"/>
+  <g font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial" fill="#ffffff">
+    <text x="130" y="745" font-size="18" font-weight="800" opacity="0.92">Outcome</text>
+    <text x="130" y="785" font-size="14" opacity="0.72">High-purity, non-toxic, biocompatible ingredient + packaging-grade material</text>
+    <g opacity="0.88">
+      <text x="130" y="840" font-size="16" font-weight="700" opacity="0.85">"</text>
+      <text x="155" y="840" font-size="14" opacity="0.72">Over 97% purity targets via controlled enzymatic processing</text>
+      <text x="130" y="875" font-size="16" font-weight="700" opacity="0.85">"</text>
+      <text x="155" y="875" font-size="14" opacity="0.72">Lower impurity profile (proteins/minerals) for consistent performance</text>
+      <text x="130" y="910" font-size="16" font-weight="700" opacity="0.85">"</text>
+      <text x="155" y="910" font-size="14" opacity="0.72">Enables chitin-based packaging with antimicrobial + barrier properties</text>
+    </g>
+  </g>
+</svg>
+

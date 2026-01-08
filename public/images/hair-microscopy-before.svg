@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="700" viewBox="0 0 1600 700" role="img" aria-label="Hair cuticle microscopy illustration before Luxitin">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbfaf7"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0b0b0d" stop-opacity="0.85"/>
+      <stop offset="0.5" stop-color="#0b0b0d" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#0b0b0d" stop-opacity="0.85"/>
+    </linearGradient>
+    <filter id="grain" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix"
+        values="1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 0.10 0"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="700" rx="28" fill="url(#bg)"/>
+
+  <g font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial">
+    <text x="60" y="90" font-size="22" font-weight="750" fill="#0f0f10">Before</text>
+    <text x="60" y="125" font-size="14" fill="#0f0f10" opacity="0.62">Raised cuticle edges and uneven surface (stylized)</text>
+  </g>
+
+  <!-- Hair fiber -->
+  <g transform="translate(80 170)">
+    <rect x="0" y="120" width="1440" height="240" rx="120" fill="url(#hair)"/>
+
+    <!-- Jagged cuticle scales -->
+    <g fill="#ffffff" opacity="0.10">
+      <path d="M80,150 L150,120 L210,150 L280,125 L350,160 L420,130 L490,165 L560,135 L640,170 L710,140 L780,175 L860,145 L930,180 L1010,150 L1080,185 L1160,155 L1230,190 L1310,160 L1380,195 L1440,170 L1440,240 L0,240 L0,170 Z"/>
+      <path d="M0,310 L90,290 L160,320 L240,295 L310,330 L390,300 L470,335 L540,305 L620,340 L690,310 L770,345 L850,315 L920,350 L1000,320 L1070,355 L1150,325 L1220,360 L1300,330 L1370,365 L1440,335 L1440,360 L0,360 Z" opacity="0.75"/>
+    </g>
+
+    <!-- Micro-scratches -->
+    <g stroke="#bda46a" stroke-opacity="0.18" stroke-width="2" stroke-linecap="round">
+      <path d="M180,210 C250,190 330,215 410,200" />
+      <path d="M520,235 C610,210 700,240 780,220" />
+      <path d="M860,245 C940,220 1040,250 1120,230" />
+      <path d="M1160,210 C1240,190 1340,215 1410,200" />
+      <path d="M240,300 C320,280 420,305 500,290" />
+      <path d="M640,310 C720,292 820,320 900,302" />
+      <path d="M980,295 C1060,275 1160,305 1240,286" />
+    </g>
+  </g>
+
+  <rect width="1600" height="700" filter="url(#grain)" opacity="0.55"/>
+</svg>
+

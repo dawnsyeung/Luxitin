@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-label="Sustainability illustration: BSFL circular economy and biodegradable packaging">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbfaf7"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e7ddc8"/>
+      <stop offset="0.5" stop-color="#bda46a"/>
+      <stop offset="1" stop-color="#c8cdd6"/>
+    </linearGradient>
+    <radialGradient id="mint" cx="70%" cy="25%" r="70%">
+      <stop offset="0" stop-color="#49b37a" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#49b37a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="1000" rx="34" fill="url(#bg)"/>
+  <rect width="1600" height="1000" rx="34" fill="url(#mint)"/>
+
+  <g font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial" fill="#0f0f10">
+    <text x="80" y="120" font-size="30" font-weight="800">BSFL circular economy</text>
+    <text x="80" y="160" font-size="16" opacity="0.62">Waste ’ BSFL ’ purified chitin ’ haircare + compostable packaging (stylized)</text>
+  </g>
+
+  <!-- Circular arrows -->
+  <g fill="none" stroke="url(#metal)" stroke-opacity="0.55" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M520,310 C650,190 950,190 1080,310" />
+    <path d="M1100,340 C1210,500 1140,720 960,790" />
+    <path d="M920,805 C720,870 510,770 470,610" />
+    <path d="M460,560 C420,430 440,360 520,310" />
+    <!-- arrow heads -->
+    <path d="M1040,270 L1080,310 L1028,324" />
+    <path d="M1015,815 L960,790 L1010,755" />
+    <path d="M470,610 L455,555 L505,595" />
+  </g>
+
+  <!-- Nodes -->
+  <g font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial">
+    <!-- Waste -->
+    <g transform="translate(300 470)">
+      <rect x="0" y="0" width="320" height="240" rx="26" fill="#ffffff" opacity="0.70" stroke="#0f0f10" stroke-opacity="0.10"/>
+      <text x="24" y="44" font-size="14" font-weight="800" fill="#0f0f10" opacity="0.78">Organic waste</text>
+      <text x="24" y="72" font-size="13" fill="#0f0f10" opacity="0.60">Food scraps & agricultural byproducts</text>
+      <g transform="translate(28 105)">
+        <path d="M40,90 C70,40 126,30 182,45 C150,92 102,118 40,90 Z" fill="#49b37a" opacity="0.42"/>
+        <path d="M60,84 C88,56 126,48 166,54" fill="none" stroke="#49b37a" stroke-opacity="0.35" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="210" cy="88" r="16" fill="#bda46a" opacity="0.25"/>
+      </g>
+    </g>
+
+    <!-- BSFL -->
+    <g transform="translate(660 230)">
+      <rect x="0" y="0" width="320" height="240" rx="26" fill="#ffffff" opacity="0.70" stroke="#0f0f10" stroke-opacity="0.10"/>
+      <text x="24" y="44" font-size="14" font-weight="800" fill="#0f0f10" opacity="0.78">BSFL</text>
+      <text x="24" y="72" font-size="13" fill="#0f0f10" opacity="0.60">Modular units near waste sources</text>
+      <!-- larva icon -->
+      <g transform="translate(40 112)" opacity="0.9">
+        <path d="M0,56 C18,22 58,12 94,18 C132,24 158,50 156,78 C154,110 118,124 78,116 C36,108 8,88 0,56 Z"
+              fill="#bda46a" opacity="0.30" stroke="#0f0f10" stroke-opacity="0.10"/>
+        <path d="M30,42 C54,32 86,36 112,54" fill="none" stroke="#0f0f10" stroke-opacity="0.18" stroke-width="5" stroke-linecap="round"/>
+        <path d="M26,64 C50,54 84,58 110,76" fill="none" stroke="#0f0f10" stroke-opacity="0.16" stroke-width="5" stroke-linecap="round"/>
+      </g>
+    </g>
+
+    <!-- Purified chitin -->
+    <g transform="translate(980 470)">
+      <rect x="0" y="0" width="320" height="240" rx="26" fill="#ffffff" opacity="0.70" stroke="#0f0f10" stroke-opacity="0.10"/>
+      <text x="24" y="44" font-size="14" font-weight="800" fill="#0f0f10" opacity="0.78">Purified chitin</text>
+      <text x="24" y="72" font-size="13" fill="#0f0f10" opacity="0.60">Advanced French biotechnology</text>
+      <!-- molecule icon -->
+      <g transform="translate(40 110)">
+        <circle cx="30" cy="50" r="18" fill="#c8cdd6" opacity="0.30"/>
+        <circle cx="90" cy="30" r="18" fill="#bda46a" opacity="0.30"/>
+        <circle cx="150" cy="58" r="18" fill="#49b37a" opacity="0.24"/>
+        <line x1="45" y1="43" x2="75" y2="35" stroke="#0f0f10" stroke-opacity="0.18" stroke-width="4"/>
+        <line x1="105" y1="36" x2="135" y2="50" stroke="#0f0f10" stroke-opacity="0.18" stroke-width="4"/>
+      </g>
+    </g>
+
+    <!-- Products + packaging -->
+    <g transform="translate(660 720)">
+      <rect x="0" y="0" width="320" height="240" rx="26" fill="#ffffff" opacity="0.70" stroke="#0f0f10" stroke-opacity="0.10"/>
+      <text x="24" y="44" font-size="14" font-weight="800" fill="#0f0f10" opacity="0.78">Haircare + packaging</text>
+      <text x="24" y="72" font-size="13" fill="#0f0f10" opacity="0.60">Ingredient and biodegradable container</text>
+      <!-- bottle + jar -->
+      <g transform="translate(40 105)">
+        <rect x="10" y="20" width="70" height="120" rx="22" fill="#ffffff" opacity="0.75" stroke="url(#metal)" stroke-width="4"/>
+        <rect x="28" y="0" width="34" height="26" rx="10" fill="#bda46a" opacity="0.25"/>
+        <rect x="110" y="40" width="120" height="90" rx="30" fill="#ffffff" opacity="0.75" stroke="url(#metal)" stroke-width="4"/>
+        <rect x="120" y="18" width="100" height="32" rx="16" fill="#c8cdd6" opacity="0.22"/>
+      </g>
+    </g>
+  </g>
+</svg>
+

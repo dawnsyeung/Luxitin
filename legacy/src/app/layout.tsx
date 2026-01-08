@@ -24,22 +24,20 @@ export const metadata: Metadata = {
     template: "%s · Luxitin",
   },
   description:
-    "Discover Luxitin: high-purity chitin derived from black soldier fly larvae via advanced French biotechnology—luxurious hair care plus biodegradable chitin-based packaging.",
+    "Luxury biotech haircare powered by chitin & chitosan—high-shine, weightless smoothness, and a modern sustainability story inspired by insect-biotech purification.",
   keywords: [
     "Luxury sustainable hair care",
     "Natural biopolymer hair care",
     "French biotech beauty",
     "Chitin hair care",
     "Chitosan hair care",
-    "Chitin-based packaging",
-    "Biodegradable packaging",
     "BSFL chitosan",
     "Insect biotech cosmetics",
   ],
   openGraph: {
     title: "Luxitin",
     description:
-      "Discover Luxitin: high-purity chitin derived from black soldier fly larvae via advanced French biotechnology—luxurious hair care plus biodegradable chitin-based packaging.",
+      "Luxury biotech haircare powered by chitin & chitosan—high-shine, weightless smoothness, and a modern sustainability story inspired by insect-biotech purification.",
     type: "website",
   },
   robots: {

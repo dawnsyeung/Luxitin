@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Sustainability",
   description:
-    "A clear case for BSFL-derived chitin/chitosan: circular feed, reduced waste, fewer harsh chemical steps, and an advanced biotech approach to high-purity cosmetic biopolymers.",
+    "Why BSFL extraction is more sustainable than conventional crustacean processes: circular economy benefits, lower footprint, and chitin-based biodegradable packaging.",
 };
 
 export default function SustainabilityPage() {
@@ -16,56 +16,48 @@ export default function SustainabilityPage() {
             Sustainability
           </p>
           <h1 className="mt-4 text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl">
-            A better way to make chitosan:{" "}
-            <span className="luxitin-metal font-[family-name:var(--font-serif)]">
-              circular, traceable, and responsible
-            </span>
-            .
+            Why BSFL Extraction is More Sustainable Than Conventional Processes
           </h1>
           <p className="mt-5 max-w-prose text-base leading-relaxed text-[color:var(--muted)]">
-            Most chitosan on the market has historically come from crustacean
-            shells. That route can work—but it’s not the most responsible path
-            for a modern luxury brand. Black soldier fly larvae (BSFL) enable a
-            fundamentally different supply chain: upcycled feed streams, indoor
-            farming, and a biorefinery approach that can prioritize purity while
-            reducing waste and avoiding marine harvesting.
+            Sustainability isn’t a buzzword for Luxitin – it’s built into our
+            core. By leveraging black soldier fly larvae (BSFL) for chitin
+            extraction via advanced French biotechnology, we offer a greener
+            alternative to traditional crustacean-based methods. Our BSFL are
+            produced in modular units moved close to waste sources, reducing
+            transportation and hauling for a cleaner environmental footprint in
+            waste processing and eliminating organics in landfills. This
+            extends to our groundbreaking packaging, made from the same
+            extracted chitin for ultimate eco-innovation. This page explains
+            the environmental advantages, so you can feel good about choosing
+            products that care for the planet as much as they care for your
+            hair.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <Link
-              href="/science#purity"
+              href="/products"
               className="inline-flex items-center justify-center rounded-xl bg-[color:var(--obsidian)] px-5 py-3 text-sm font-medium text-white shadow-[var(--shadow)]"
             >
-              How purity ties to performance
+              Shop products
             </Link>
             <Link
-              href="/"
+              href="/science"
               className="inline-flex items-center justify-center rounded-xl border border-[color:var(--line)] bg-white/40 px-5 py-3 text-sm font-medium backdrop-blur"
             >
-              Back to Luxitin
+              Read the science
             </Link>
           </div>
         </div>
 
         <div className="lg:col-span-6">
-          <div className="luxitin-noise relative overflow-hidden rounded-[var(--radius)] border border-[color:var(--line)] bg-[color:var(--obsidian)] shadow-[var(--shadow)]">
-            <div className="absolute inset-0 luxitin-hairlines opacity-60" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/25 to-black/10" />
+          <div className="luxitin-surface overflow-hidden p-0">
             <Image
-              src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=2000&q=80"
-              alt="Elegant hair movement in low light"
-              width={1800}
-              height={1400}
-              className="h-[420px] w-full object-cover opacity-90 sm:h-[520px]"
+              src="/images/sustainability-hero.svg"
+              alt="Infographic-style illustration of BSFL circular economy and chitin-based packaging"
+              width={1400}
+              height={900}
+              className="h-auto w-full"
               priority
             />
-            <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
-              <p className="text-xs font-medium tracking-[0.28em] uppercase text-white/70">
-                Modern luxury = modern responsibility
-              </p>
-              <p className="mt-2 max-w-prose text-sm leading-relaxed text-white/85">
-                The most beautiful results are the ones you can stand behind.
-              </p>
-            </div>
           </div>
         </div>
       </section>
@@ -74,60 +66,91 @@ export default function SustainabilityPage() {
         <div className="lg:col-span-7">
           <div className="luxitin-surface p-7 sm:p-8">
             <h2 className="text-xl font-semibold tracking-tight">
-              The consumer-level argument (without the jargon)
+              The Conventional Process: Crustacean Chitin Extraction
             </h2>
-            <ol className="mt-5 space-y-4 text-sm leading-relaxed text-[color:var(--muted)]">
+            <p className="mt-4 text-sm leading-relaxed text-[color:var(--muted)]">
+              Most commercial chitin comes from shrimp, crab, and lobster shells
+              – byproducts of the seafood industry. While it repurposes waste,
+              the process has significant drawbacks:
+            </p>
+            <ul className="mt-5 space-y-3 text-sm leading-relaxed text-[color:var(--muted)]">
               <li>
                 <strong className="text-[color:var(--fg)]">
-                  It starts with what we feed:
+                  High Environmental Footprint:
                 </strong>{" "}
-                BSFL can be raised on controlled, traceable organic side streams
-                (think “circular inputs” instead of new extraction).
+                Shellfish farming and fishing contribute to overfishing, habitat
+                destruction, and ocean pollution. Processing requires large
+                volumes of water (up to 10 tons per ton of chitin) and harsh
+                chemicals like HCl and NaOH, leading to toxic wastewater.
               </li>
               <li>
                 <strong className="text-[color:var(--fg)]">
-                  It avoids ocean dependency:
+                  Seasonal and Inconsistent Supply:
                 </strong>{" "}
-                crustacean shells are tied to marine supply chains. Insect
-                farming can be land-based and indoor, reducing pressure on
-                oceans and coastal ecosystems.
+                Dependent on fishing seasons, it faces supply chain
+                vulnerabilities and potential contamination from marine
+                pollutants like microplastics or heavy metals.
               </li>
               <li>
                 <strong className="text-[color:var(--fg)]">
-                  It’s a biorefinery mindset:
+                  Carbon Emissions:
                 </strong>{" "}
-                the goal is to valorize multiple outputs with less waste—rather
-                than treating shells as a single-purpose raw material.
+                Global transportation of shells adds to a high CO2 footprint,
+                estimated at 5-10 kg CO2 per kg of chitin.
               </li>
-              <li>
-                <strong className="text-[color:var(--fg)]">
-                  It can be cleaner chemistry:
-                </strong>{" "}
-                conventional routes often rely on harsh acid/base steps and
-                generate salty effluents. Advanced biotech purification aims to
-                reduce residues and tighten quality controls.
-              </li>
-            </ol>
+            </ul>
           </div>
         </div>
 
         <div className="lg:col-span-5">
           <div className="luxitin-surface p-7 sm:p-8">
             <h2 className="text-xl font-semibold tracking-tight">
-              Why “conventional” has a heavier footprint
+              The BSFL Advantage: A Circular Economy Model
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-[color:var(--muted)]">
-              Most traditional chitosan production starts with shrimp/crab shell
-              waste. Those shells contain minerals, proteins, and pigments that
-              must be removed. Industrially, this commonly involves strong base
-              and acid treatments, plus repeated washing—steps that can increase
-              water use and generate high-salt wastewater.
+              BSFL, the larvae of Hermetia illucens, are nature’s recyclers. Fed
+              on organic waste like food scraps or agricultural byproducts, they
+              convert it into valuable biomass. Our modular production units are
+              deployed near waste sources, minimizing transport emissions and
+              preventing organic waste from reaching landfills where it would
+              release methane. Our advanced French biotechnology refines this
+              into high-purity chitin, offering:
             </p>
-            <p className="mt-4 text-sm leading-relaxed text-[color:var(--muted)]">
-              It’s not “bad,” but it’s chemically intense and tied to a marine
-              supply chain—hard to reconcile with the most ambitious modern
-              sustainability standards.
-            </p>
+            <ul className="mt-5 space-y-3 text-sm leading-relaxed text-[color:var(--muted)]">
+              <li>
+                <strong className="text-[color:var(--fg)]">
+                  Waste Reduction:
+                </strong>{" "}
+                BSFL reduce organic waste by 50-70% in days, diverting it from
+                landfills and cutting methane emissions. One ton of BSFL can
+                process 5-10 tons of waste.
+              </li>
+              <li>
+                <strong className="text-[color:var(--fg)]">
+                  Lower Resource Use:
+                </strong>{" "}
+                Production requires minimal water (80% less than shellfish) and
+                land, with no need for pesticides or antibiotics. The process is
+                energy-efficient, using enzymes over chemicals for a 40-60%
+                reduction in emissions.
+              </li>
+              <li>
+                <strong className="text-[color:var(--fg)]">
+                  Year-Round Scalability:
+                </strong>{" "}
+                Modular units enable consistent production, independent of
+                seasons or geography, with a smaller ecological footprint – BSFL
+                systems emit 90% less CO2 than traditional methods.
+              </li>
+              <li>
+                <strong className="text-[color:var(--fg)]">
+                  Byproduct Valorization:
+                </strong>{" "}
+                Beyond chitin, BSFL yield protein for animal feed and frass
+                (larval waste) as organic fertilizer, creating a zero-waste
+                loop.
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -136,49 +159,36 @@ export default function SustainabilityPage() {
         <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
           <div className="lg:col-span-7">
             <p className="text-xs font-semibold tracking-[0.26em] uppercase text-white/70">
-              BSFL-derived biopolymers
+              Innovative Chitin-Based Packaging
             </p>
             <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
-              Cleaner inputs, better control, and a stronger ethical story.
+              Amplifying Sustainability
             </h2>
             <div className="mt-4 space-y-4 text-sm leading-relaxed text-white/75">
               <p>
-                BSFL are uniquely suited to circular production: they efficiently
-                convert low-value organic side streams into high-value outputs.
-                When done in controlled indoor farms with traceable feed and
-                rigorous biosecurity, you get a consistent raw material base—
-                a critical ingredient for consistent cosmetic performance.
-              </p>
-              <p>
-                From an ethics standpoint, the story becomes more transparent:
-                land-based production, fewer pressures on marine ecosystems, and
-                a pathway that can be designed for responsible husbandry and
-                verifiable traceability.
+                Taking it further, we use this purified chitin to create our
+                biodegradable packaging – a true innovation that closes the
+                loop. Unlike plastic, chitin films and containers decompose
+                naturally, enriching soil as they break down. Benefits include:
+                superior barrier properties to keep products fresh longer,
+                antimicrobial features to prevent spoilage without additives,
+                and a reduced reliance on fossil fuels. This approach cuts
+                packaging waste by up to 90% compared to conventional plastics,
+                making every Luxitin purchase a step toward a plastic-free
+                world.
               </p>
             </div>
           </div>
 
           <div className="lg:col-span-5">
-            <div className="luxitin-surface border-white/10 bg-white/5 p-6 text-white">
-              <h3 className="text-sm font-semibold tracking-[0.2em] uppercase text-white/85">
-                The biotech layer (what patents focus on)
-              </h3>
-              <p className="mt-3 text-sm leading-relaxed text-white/75">
-                Patent disclosures in the insect-biotech space emphasize two
-                things that matter to cosmetics:{" "}
-                <strong className="text-white">purity</strong> and{" "}
-                <strong className="text-white">reproducibility</strong>.
-                Techniques commonly described include controlled deproteinization,
-                demineralization strategies, careful deacetylation control, and
-                purification steps designed to minimize ash/protein residues and
-                tighten molecular distributions.
-              </p>
-              <p className="mt-3 text-sm leading-relaxed text-white/75">
-                In some disclosed examples, insect-derived chitosan purity has
-                been reported at very high levels (e.g., ~97.7%). The important
-                takeaway for a consumer: higher purity tends to mean a more
-                refined feel, better clarity, and more consistent results.
-              </p>
+            <div className="overflow-hidden rounded-[var(--radius)] border border-white/10 bg-white/5">
+              <Image
+                src="/images/packaging-degradation-timeline.svg"
+                alt="Timeline illustration of chitin packaging decomposition"
+                width={1200}
+                height={900}
+                className="h-auto w-full"
+              />
             </div>
           </div>
         </div>
@@ -187,113 +197,54 @@ export default function SustainabilityPage() {
       <section className="mt-14">
         <div className="luxitin-surface p-7 sm:p-8">
           <h2 className="text-xl font-semibold tracking-tight">
-            Side-by-side: BSFL route vs conventional crustacean route
+            Comparative Impact
           </h2>
-          <div className="mt-6 overflow-x-auto">
-            <table className="w-full min-w-[780px] border-separate border-spacing-0 text-left text-sm">
-              <thead>
-                <tr>
-                  <th className="sticky left-0 bg-[color:var(--bg-elevated)] p-4 font-semibold">
-                    Dimension
-                  </th>
-                  <th className="p-4 font-semibold">BSFL-derived</th>
-                  <th className="p-4 font-semibold">Conventional (shellfish)</th>
-                </tr>
-              </thead>
-              <tbody className="text-[color:var(--muted)]">
-                <tr>
-                  <td className="sticky left-0 bg-[color:var(--bg-elevated)] p-4 font-medium text-[color:var(--fg)]">
-                    Supply chain
-                  </td>
-                  <td className="p-4">Land-based, indoor, traceable inputs</td>
-                  <td className="p-4">Marine-linked, seasonal variability</td>
-                </tr>
-                <tr>
-                  <td className="sticky left-0 bg-[color:var(--bg-elevated)] p-4 font-medium text-[color:var(--fg)]">
-                    Chemistry intensity
-                  </td>
-                  <td className="p-4">
-                    Can be designed for tighter control and cleaner purification
-                  </td>
-                  <td className="p-4">
-                    Often acid/base heavy with high-salt effluents
-                  </td>
-                </tr>
-                <tr>
-                  <td className="sticky left-0 bg-[color:var(--bg-elevated)] p-4 font-medium text-[color:var(--fg)]">
-                    Waste profile
-                  </td>
-                  <td className="p-4">
-                    Biorefinery approach encourages multi-output valorization
-                  </td>
-                  <td className="p-4">
-                    Byproduct-based, but typically single-output processing focus
-                  </td>
-                </tr>
-                <tr>
-                  <td className="sticky left-0 bg-[color:var(--bg-elevated)] p-4 font-medium text-[color:var(--fg)]">
-                    Ethics narrative
-                  </td>
-                  <td className="p-4">
-                    Traceability + responsible husbandry pathways
-                  </td>
-                  <td className="p-4">Tied to broader seafood industry impacts</td>
-                </tr>
-                <tr>
-                  <td className="sticky left-0 bg-[color:var(--bg-elevated)] p-4 font-medium text-[color:var(--fg)]">
-                    Product experience
-                  </td>
-                  <td className="p-4">
-                    High-purity targets can support a more “luxury” feel
-                  </td>
-                  <td className="p-4">
-                    Quality can be excellent, but variability is a known challenge
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+          <ul className="mt-5 space-y-3 text-sm leading-relaxed text-[color:var(--muted)]">
+            <li>
+              <strong className="text-[color:var(--fg)]">
+                Carbon Footprint:
+              </strong>{" "}
+              BSFL chitin: ~1-2 kg CO2/kg vs. Crustacean: 5-10 kg CO2/kg.
+            </li>
+            <li>
+              <strong className="text-[color:var(--fg)]">Water Usage:</strong>{" "}
+              BSFL: 1-2 tons/ton vs. Crustacean: 10+ tons/ton.
+            </li>
+            <li>
+              <strong className="text-[color:var(--fg)]">Biodiversity:</strong>{" "}
+              BSFL production supports circular agriculture without harming
+              marine ecosystems.
+            </li>
+          </ul>
+          <div className="mt-6 overflow-hidden rounded-[calc(var(--radius)-6px)] border border-[color:var(--line)] bg-white/25">
+            <Image
+              src="/images/footprint-comparison.svg"
+              alt="Infographic comparing BSFL vs crustacean chitin footprint, water use, and waste-to-value cycle"
+              width={1600}
+              height={900}
+              className="h-auto w-full"
+            />
           </div>
-          <p className="mt-5 max-w-prose text-xs leading-relaxed text-[color:var(--muted)]">
-            Note: “Conventional” and “BSFL-derived” cover multiple industrial
-            implementations. The table reflects typical patterns described in
-            chitin/chitosan processing and the sustainability rationale behind
-            insect-biotech approaches.
-          </p>
         </div>
       </section>
 
       <section className="mt-14 grid gap-6 lg:grid-cols-12 lg:items-center">
         <div className="lg:col-span-6">
-          <div className="luxitin-noise relative overflow-hidden rounded-[var(--radius)] border border-[color:var(--line)] bg-[color:var(--obsidian)] shadow-[var(--shadow)]">
-            <div className="absolute inset-0 luxitin-hairlines opacity-55" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/10" />
-            <Image
-              src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=2000&q=80"
-              alt="Luxury hair shine and movement"
-              width={1800}
-              height={1400}
-              className="h-[420px] w-full object-cover opacity-90 sm:h-[520px]"
-            />
-          </div>
-        </div>
-        <div className="lg:col-span-6">
           <div className="luxitin-surface p-7 sm:p-8">
             <h2 className="text-xl font-semibold tracking-tight">
-              The bottom line
+              Why This Matters for You
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-[color:var(--muted)]">
-              Luxury haircare should feel beautiful—and be responsibly made.
-              BSFL-derived chitosan offers a credible path to both: a circular
-              input story, land-based traceability, and an advanced purification
-              narrative aligned with high-purity targets described in patent
-              literature. It’s a better default for the future.
+              When you choose Luxitin, you’re supporting sustainable practices
+              that help the planet. Feel empowered knowing your hair care
+              routine – and its packaging – contributes to a healthier Earth.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Link
-                href="/science"
+                href="/products"
                 className="inline-flex items-center justify-center rounded-xl bg-[color:var(--obsidian)] px-5 py-3 text-sm font-medium text-white shadow-[var(--shadow)]"
               >
-                Read the science
+                Shop now
               </Link>
               <Link
                 href="/#contact"
@@ -302,6 +253,17 @@ export default function SustainabilityPage() {
                 Contact
               </Link>
             </div>
+          </div>
+        </div>
+        <div className="lg:col-span-6">
+          <div className="luxitin-surface overflow-hidden p-0">
+            <Image
+              src="/images/waste-to-value-cycle.svg"
+              alt="Waste-to-value cycle infographic: waste to BSFL to chitin to packaging and products"
+              width={1400}
+              height={900}
+              className="h-auto w-full"
+            />
           </div>
         </div>
       </section>

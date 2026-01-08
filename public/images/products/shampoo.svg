@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-label="Luxitin Revitalizing Shampoo illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#fbfaf7"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e7ddc8"/>
+      <stop offset="0.5" stop-color="#bda46a"/>
+      <stop offset="1" stop-color="#c8cdd6"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e7ddc8" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#bda46a" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#c8cdd6" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="640" rx="28" fill="url(#bg)"/>
+
+  <!-- Bottle -->
+  <g transform="translate(460 90)">
+    <rect x="70" y="0" width="140" height="90" rx="34" fill="#c8cdd6" opacity="0.22" stroke="#0f0f10" stroke-opacity="0.08"/>
+    <rect x="95" y="-30" width="90" height="60" rx="26" fill="#bda46a" opacity="0.22" stroke="#0f0f10" stroke-opacity="0.08"/>
+    <rect x="0" y="70" width="280" height="480" rx="120" fill="#ffffff" opacity="0.78" stroke="url(#metal)" stroke-width="6"/>
+    <rect x="40" y="240" width="200" height="160" rx="34" fill="#0b0b0d" opacity="0.04" stroke="#0b0b0d" stroke-opacity="0.06"/>
+    <rect x="30" y="130" width="220" height="22" rx="11" fill="url(#sheen)"/>
+  </g>
+
+  <!-- Text -->
+  <g font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial" fill="#0f0f10">
+    <text x="70" y="110" font-size="18" font-weight="800" opacity="0.86">Luxitin Revitalizing Shampoo</text>
+    <text x="70" y="142" font-size="13" opacity="0.62">5% Luxitin · Compostable chitin bottle</text>
+  </g>
+
+  <!-- Subtle hairlines -->
+  <g fill="none" stroke="url(#metal)" stroke-opacity="0.25" stroke-width="3">
+    <path d="M40,560 C250,470 380,520 560,410 C720,312 910,360 1160,220" />
+  </g>
+</svg>
+
