@@ -2,7 +2,7 @@
 
 :root {
   --bg: #e7ddc8; /* champagne */
-  --bg-elevated: rgba(255, 255, 255, 0.58);
+  --bg-elevated: rgba(255, 251, 244, 0.62);
   --fg: #0f0f10;
   --muted: rgba(15, 15, 16, 0.65);
   --line: rgba(15, 15, 16, 0.12);
@@ -22,23 +22,27 @@ body {
   height: 100%;
 }
 
+html {
+  background: var(--bg);
+}
+
 body {
   background: radial-gradient(
-      1100px 640px at 18% 0%,
-      rgba(189, 164, 106, 0.22),
+      1200px 720px at 14% -8%,
+      rgba(189, 164, 106, 0.3),
       transparent 62%
     ),
     radial-gradient(
-      980px 560px at 88% 8%,
-      rgba(200, 205, 214, 0.22),
-      transparent 58%
+      980px 600px at 92% 6%,
+      rgba(176, 122, 74, 0.26),
+      transparent 60%
     ),
     radial-gradient(
-      980px 680px at 50% 96%,
-      rgba(176, 122, 74, 0.22),
-      transparent 62%
+      1000px 720px at 52% 102%,
+      rgba(189, 164, 106, 0.18),
+      transparent 64%
     ),
-    linear-gradient(180deg, rgba(231, 221, 200, 0.92), rgba(176, 122, 74, 0.1)),
+    linear-gradient(180deg, rgba(231, 221, 200, 0.94), rgba(176, 122, 74, 0.14)),
     var(--bg);
   color: var(--fg);
   text-rendering: geometricPrecision;
