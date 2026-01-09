@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import luxitinImg9 from "../../luxitin_img_9.png";
+
 export default function HomePage() {
   return (
     <div className="py-6 sm:py-8">
@@ -72,10 +74,8 @@ export default function HomePage() {
               </p>
               <div className="mt-5 overflow-hidden rounded-[calc(var(--radius)-6px)] border border-white/10 bg-black/20">
                 <Image
-                  src="/images/packaging-degradation-timeline.svg"
-                  alt="Illustration showing chitin-based packaging breaking down naturally over time"
-                  width={1100}
-                  height={520}
+                  src={luxitinImg9}
+                  alt="Luxitin formula and packaging, returning back to nature"
                   className="h-auto w-full"
                 />
               </div>
