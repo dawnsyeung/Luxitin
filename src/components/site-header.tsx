@@ -16,12 +16,12 @@ export function SiteHeader() {
     <header className="py-6">
       <div className="flex items-center justify-between gap-4">
         <Link href="/" className="flex items-center gap-3">
-          <span className="relative h-9 w-9 overflow-hidden rounded-xl border border-[color:var(--line)] bg-white/40">
+          <span className="relative h-12 w-12 overflow-hidden rounded-2xl border border-[color:var(--line)] bg-white/40 sm:h-14 sm:w-14">
             <Image
               src="/NEWLOGO.png"
               alt="Luxitin"
               fill
-              className="object-contain p-1.5"
+              className="object-contain p-1 sm:p-1.5"
               priority
             />
           </span>
