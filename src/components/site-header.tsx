@@ -19,11 +19,11 @@ export function SiteHeader() {
           <Image
             src="/NEWLOGO.png"
             alt="Luxitin"
-            width={190}
-            height={44}
+            width={380}
+            height={88}
             priority
-            sizes="190px"
-            className="h-11 w-auto object-contain"
+            sizes="380px"
+            className="h-[88px] w-auto max-w-[70vw] object-contain"
           />
         </Link>
         <nav aria-label="Primary" className="flex items-center gap-6 text-sm">
