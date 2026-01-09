@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #fbfaf7; /* soft ivory */
+  --bg: #c8bea7; /* elegant golden pewter */
   --bg-elevated: rgba(255, 255, 255, 0.58);
   --fg: #0f0f10;
   --muted: rgba(15, 15, 16, 0.65);
