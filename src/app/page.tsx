@@ -41,7 +41,7 @@ export default function HomePage() {
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link
                 href="/science"
-                className="inline-flex items-center justify-center rounded-xl bg-white px-5 py-3 text-sm font-medium text-[color:var(--obsidian)]"
+                className="inline-flex items-center justify-center rounded-xl bg-[color:var(--gold)] px-5 py-3 text-sm font-medium text-[color:var(--obsidian)]"
               >
                 Explore our science
               </Link>
@@ -175,7 +175,7 @@ export default function HomePage() {
             </Link>
             <Link
               href="/science"
-              className="inline-flex items-center justify-center rounded-xl border border-[color:var(--line)] bg-white/40 px-5 py-3 text-sm font-medium backdrop-blur"
+              className="inline-flex items-center justify-center rounded-xl border border-[color:var(--line)] bg-white/10 px-5 py-3 text-sm font-medium backdrop-blur"
             >
               The science behind Luxitin
             </Link>
@@ -217,7 +217,7 @@ export default function HomePage() {
               },
             ].map((p) => (
               <div key={p.name} className="luxitin-surface overflow-hidden">
-                <div className="border-b border-[color:var(--line)] bg-white/25 p-4">
+                <div className="border-b border-[color:var(--line)] bg-white/5 p-4">
                   <Image
                     src={p.image}
                     alt={`${p.name} packaging illustration`}

@@ -41,7 +41,7 @@ export default function SustainabilityPage() {
             </Link>
             <Link
               href="/science"
-              className="inline-flex items-center justify-center rounded-xl border border-[color:var(--line)] bg-white/40 px-5 py-3 text-sm font-medium backdrop-blur"
+              className="inline-flex items-center justify-center rounded-xl border border-[color:var(--line)] bg-white/10 px-5 py-3 text-sm font-medium backdrop-blur"
             >
               Read the science
             </Link>
@@ -216,7 +216,7 @@ export default function SustainabilityPage() {
               marine ecosystems.
             </li>
           </ul>
-          <div className="mt-6 overflow-hidden rounded-[calc(var(--radius)-6px)] border border-[color:var(--line)] bg-white/25">
+          <div className="mt-6 overflow-hidden rounded-[calc(var(--radius)-6px)] border border-[color:var(--line)] bg-white/5">
             <Image
               src="/images/footprint-comparison.svg"
               alt="Infographic comparing BSFL vs crustacean chitin footprint, water use, and waste-to-value cycle"
@@ -248,7 +248,7 @@ export default function SustainabilityPage() {
               </Link>
               <Link
                 href="/#contact"
-                className="inline-flex items-center justify-center rounded-xl border border-[color:var(--line)] bg-white/40 px-5 py-3 text-sm font-medium backdrop-blur"
+                className="inline-flex items-center justify-center rounded-xl border border-[color:var(--line)] bg-white/10 px-5 py-3 text-sm font-medium backdrop-blur"
               >
                 Contact
               </Link>

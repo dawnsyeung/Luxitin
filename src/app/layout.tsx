@@ -58,7 +58,7 @@ export default function RootLayout({
       <body className="min-h-dvh font-[family-name:var(--font-sans)]">
         <a
           href="#content"
-          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-xl focus:bg-white/90 focus:px-4 focus:py-2 focus:text-sm focus:shadow"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-xl focus:bg-[color:var(--champagne)] focus:px-4 focus:py-2 focus:text-sm focus:text-[color:var(--obsidian)] focus:shadow"
         >
           Skip to content
         </a>

@@ -39,7 +39,7 @@ export default function SciencePage() {
             </Link>
             <Link
               href="/sustainability"
-              className="inline-flex items-center justify-center rounded-xl border border-[color:var(--line)] bg-white/40 px-5 py-3 text-sm font-medium backdrop-blur"
+              className="inline-flex items-center justify-center rounded-xl border border-[color:var(--line)] bg-white/10 px-5 py-3 text-sm font-medium backdrop-blur"
             >
               Why BSFL is more sustainable
             </Link>
@@ -114,7 +114,7 @@ export default function SciencePage() {
               Visual Aid: Hair Microscopy (Before / After)
             </h2>
             <div className="mt-5 grid gap-4">
-              <div className="overflow-hidden rounded-[calc(var(--radius)-6px)] border border-[color:var(--line)] bg-white/25">
+              <div className="overflow-hidden rounded-[calc(var(--radius)-6px)] border border-[color:var(--line)] bg-white/5">
                 <Image
                   src="/images/hair-microscopy-before.svg"
                   alt="Stylized microscopy view of damaged hair cuticle (before)"
@@ -123,7 +123,7 @@ export default function SciencePage() {
                   className="h-auto w-full"
                 />
               </div>
-              <div className="overflow-hidden rounded-[calc(var(--radius)-6px)] border border-[color:var(--line)] bg-white/25">
+              <div className="overflow-hidden rounded-[calc(var(--radius)-6px)] border border-[color:var(--line)] bg-white/5">
                 <Image
                   src="/images/hair-microscopy-after.svg"
                   alt="Stylized microscopy view of smoother hair cuticle (after)"

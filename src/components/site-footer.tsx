@@ -53,7 +53,7 @@ export function SiteFooter() {
                 <a
                   href="#"
                   aria-label="Instagram"
-                  className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-[color:var(--line)] bg-white/40 text-[color:var(--muted)] hover:text-[color:var(--fg)]"
+                  className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-[color:var(--line)] bg-white/5 text-[color:var(--muted)] hover:bg-white/10 hover:text-[color:var(--fg)]"
                 >
                   <svg
                     width="18"
@@ -83,7 +83,7 @@ export function SiteFooter() {
                 <a
                   href="#"
                   aria-label="X"
-                  className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-[color:var(--line)] bg-white/40 text-[color:var(--muted)] hover:text-[color:var(--fg)]"
+                  className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-[color:var(--line)] bg-white/5 text-[color:var(--muted)] hover:bg-white/10 hover:text-[color:var(--fg)]"
                 >
                   <svg
                     width="18"
@@ -103,7 +103,7 @@ export function SiteFooter() {
                 <a
                   href="#"
                   aria-label="LinkedIn"
-                  className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-[color:var(--line)] bg-white/40 text-[color:var(--muted)] hover:text-[color:var(--fg)]"
+                  className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-[color:var(--line)] bg-white/5 text-[color:var(--muted)] hover:bg-white/10 hover:text-[color:var(--fg)]"
                 >
                   <svg
                     width="18"
