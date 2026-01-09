@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #fbfaf7; /* soft ivory */
-  --bg-elevated: rgba(255, 255, 255, 0.58);
-  --fg: #0f0f10;
-  --muted: rgba(15, 15, 16, 0.65);
-  --line: rgba(15, 15, 16, 0.12);
+  --bg: #4a2f00; /* dark golden brown */
+  --bg-elevated: rgba(255, 255, 255, 0.07);
+  --fg: rgba(255, 255, 255, 0.92);
+  --muted: rgba(255, 255, 255, 0.7);
+  --line: rgba(255, 255, 255, 0.14);
 
   --champagne: #e7ddc8;
   --gold: #bda46a;
@@ -25,17 +25,17 @@ body {
 body {
   background: radial-gradient(
       1200px 600px at 20% 0%,
-      rgba(231, 221, 200, 0.38),
+      rgba(189, 164, 106, 0.16),
       transparent 60%
     ),
     radial-gradient(
       900px 500px at 90% 10%,
-      rgba(200, 205, 214, 0.3),
+      rgba(176, 122, 74, 0.12),
       transparent 55%
     ),
     radial-gradient(
       900px 600px at 50% 95%,
-      rgba(176, 122, 74, 0.14),
+      rgba(231, 221, 200, 0.06),
       transparent 62%
     ),
     var(--bg);
