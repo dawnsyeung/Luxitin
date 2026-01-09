@@ -105,7 +105,7 @@ export default function ProductsPage() {
             </Link>
             <Link
               href="/sustainability"
-              className="inline-flex items-center justify-center rounded-xl border border-[color:var(--line)] bg-white/40 px-5 py-3 text-sm font-medium backdrop-blur"
+              className="inline-flex items-center justify-center rounded-xl border border-[color:var(--line)] bg-white/10 px-5 py-3 text-sm font-medium backdrop-blur"
             >
               Sustainability story
             </Link>
@@ -144,7 +144,7 @@ export default function ProductsPage() {
         <div className="mt-8 grid gap-4 lg:grid-cols-2">
           {products.map((p) => (
             <article key={p.name} className="luxitin-surface overflow-hidden">
-              <div className="border-b border-[color:var(--line)] bg-white/25 p-5">
+              <div className="border-b border-[color:var(--line)] bg-white/5 p-5">
                 <Image
                   src={p.image}
                   alt={`${p.name} packaging illustration`}
@@ -199,7 +199,7 @@ export default function ProductsPage() {
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
               href="/#contact"
-              className="inline-flex items-center justify-center rounded-xl bg-white px-5 py-3 text-sm font-medium text-[color:var(--obsidian)]"
+              className="inline-flex items-center justify-center rounded-xl bg-[color:var(--gold)] px-5 py-3 text-sm font-medium text-[color:var(--obsidian)]"
             >
               Contact us
             </Link>

@@ -1,20 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #fbfaf7; /* soft ivory */
-  --bg-elevated: rgba(255, 255, 255, 0.58);
-  --fg: #0f0f10;
-  --muted: rgba(15, 15, 16, 0.65);
-  --line: rgba(15, 15, 16, 0.12);
+  --bg: #0f0805; /* dark espresso */
+  --bg-elevated: rgba(28, 18, 12, 0.72);
+  --fg: #f2e7d1; /* champagne */
+  --muted: rgba(242, 231, 209, 0.68);
+  --line: rgba(201, 173, 99, 0.22);
 
-  --champagne: #e7ddc8;
-  --gold: #bda46a;
+  --champagne: #f2e7d1;
+  --gold: #c9ad63;
   --bronze: #b07a4a;
   --silver: #c8cdd6;
-  --obsidian: #0b0b0d;
+  --obsidian: #120906;
 
   --radius: 18px;
-  --shadow: 0 20px 80px rgba(23, 23, 23, 0.12);
+  --shadow: 0 22px 90px rgba(0, 0, 0, 0.45);
 }
 
 html,
@@ -24,27 +24,28 @@ body {
 
 body {
   background: radial-gradient(
-      1200px 600px at 20% 0%,
-      rgba(231, 221, 200, 0.38),
+      1100px 620px at 18% 0%,
+      rgba(201, 173, 99, 0.18),
       transparent 60%
     ),
     radial-gradient(
-      900px 500px at 90% 10%,
-      rgba(200, 205, 214, 0.3),
-      transparent 55%
-    ),
-    radial-gradient(
-      900px 600px at 50% 95%,
+      980px 640px at 88% 12%,
       rgba(176, 122, 74, 0.14),
       transparent 62%
     ),
+    radial-gradient(
+      1000px 700px at 50% 100%,
+      rgba(242, 231, 209, 0.06),
+      transparent 66%
+    ),
+    linear-gradient(180deg, rgba(18, 9, 6, 0.92), rgba(8, 4, 3, 0.98)),
     var(--bg);
   color: var(--fg);
   text-rendering: geometricPrecision;
 }
 
 ::selection {
-  background: rgba(189, 164, 106, 0.28);
+  background: rgba(201, 173, 99, 0.35);
 }
 
 /* Subtle hair-like shimmer line */
@@ -52,9 +53,9 @@ body {
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(231, 221, 200, 0.18) 20%,
-    rgba(189, 164, 106, 0.22) 50%,
-    rgba(200, 205, 214, 0.18) 80%,
+    rgba(242, 231, 209, 0.08) 20%,
+    rgba(201, 173, 99, 0.18) 50%,
+    rgba(176, 122, 74, 0.1) 80%,
     transparent 100%
   );
 }
@@ -70,11 +71,11 @@ body {
 .luxitin-metal {
   background: linear-gradient(
     120deg,
-    rgba(231, 221, 200, 0.92) 0%,
-    rgba(189, 164, 106, 0.95) 22%,
-    rgba(200, 205, 214, 0.9) 52%,
+    rgba(242, 231, 209, 0.92) 0%,
+    rgba(201, 173, 99, 0.98) 26%,
+    rgba(200, 205, 214, 0.85) 52%,
     rgba(176, 122, 74, 0.92) 78%,
-    rgba(231, 221, 200, 0.92) 100%
+    rgba(242, 231, 209, 0.9) 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
@@ -84,27 +85,27 @@ body {
 .luxitin-dark {
   background: radial-gradient(
       800px 400px at 20% 0%,
-      rgba(189, 164, 106, 0.16),
+      rgba(201, 173, 99, 0.18),
       transparent 60%
     ),
     radial-gradient(
       700px 500px at 90% 10%,
-      rgba(200, 205, 214, 0.14),
+      rgba(176, 122, 74, 0.14),
       transparent 62%
     ),
-    linear-gradient(180deg, rgba(11, 11, 13, 0.92), rgba(11, 11, 13, 0.96));
-  color: rgba(255, 255, 255, 0.92);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+    linear-gradient(180deg, rgba(18, 9, 6, 0.92), rgba(8, 4, 3, 0.98));
+  color: var(--fg);
+  border: 1px solid rgba(201, 173, 99, 0.18);
 }
 
 .luxitin-hairlines {
   background-image: linear-gradient(
     115deg,
-    rgba(255, 255, 255, 0.08) 0%,
-    rgba(255, 255, 255, 0.02) 35%,
-    rgba(189, 164, 106, 0.08) 50%,
-    rgba(255, 255, 255, 0.02) 65%,
-    rgba(255, 255, 255, 0.08) 100%
+    rgba(242, 231, 209, 0.08) 0%,
+    rgba(242, 231, 209, 0.02) 35%,
+    rgba(201, 173, 99, 0.09) 50%,
+    rgba(242, 231, 209, 0.02) 65%,
+    rgba(242, 231, 209, 0.08) 100%
   );
   background-size: 240% 100%;
   animation: luxitin-flow 14s ease-in-out infinite;
