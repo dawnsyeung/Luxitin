@@ -15,19 +15,15 @@ export function SiteHeader() {
   return (
     <header className="py-6">
       <div className="flex items-center justify-between gap-4">
-        <Link href="/" className="flex items-center gap-3">
-          <span className="relative h-9 w-9 overflow-hidden rounded-xl border border-[color:var(--line)] bg-white/40">
-            <Image
-              src="/NEWLOGO.png"
-              alt="Luxitin"
-              fill
-              className="object-contain p-1.5"
-              priority
-            />
-          </span>
-          <span className="text-base font-semibold tracking-[0.24em] uppercase">
-            Luxitin
-          </span>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/NEWLOGO.png"
+            alt="Luxitin"
+            width={320}
+            height={120}
+            priority
+            className="h-14 w-auto sm:h-16 lg:h-20"
+          />
         </Link>
         <nav aria-label="Primary" className="flex items-center gap-6 text-sm">
           <Link
