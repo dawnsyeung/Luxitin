@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import shampooImage from "../../Shampoo.png";
+import maskImage from "../../Mask.png";
 
 export default function HomePage() {
   return (
@@ -195,7 +196,7 @@ export default function HomePage() {
               {
                 name: "Luxitin Deep Conditioning Mask",
                 price: "$35",
-                image: "/images/products/mask.svg",
+                image: maskImage,
               },
               {
                 name: "Luxitin Protective Hair Serum",
