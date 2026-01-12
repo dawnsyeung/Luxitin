@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import shampooImage from "../../Shampoo.png";
+
 export default function HomePage() {
   return (
     <div className="py-6 sm:py-8">
@@ -188,7 +190,7 @@ export default function HomePage() {
               {
                 name: "Luxitin Revitalizing Shampoo",
                 price: "$25",
-                image: "/images/products/shampoo.svg",
+                image: shampooImage,
               },
               {
                 name: "Luxitin Deep Conditioning Mask",
