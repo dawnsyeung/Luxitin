@@ -3,6 +3,10 @@ import Link from "next/link";
 
 import shampooImage from "../../Shampoo.png";
 import maskImage from "../../Mask.png";
+import serumImage from "../../Serum.png";
+import volumizingImage from "../../Volumizing.png";
+import scalpImage from "../../Scalp.png";
+import nightImage from "../../Night.png";
 
 export default function HomePage() {
   return (
@@ -201,22 +205,22 @@ export default function HomePage() {
               {
                 name: "Luxitin Protective Hair Serum",
                 price: "$30",
-                image: "/images/products/serum.svg",
+                image: serumImage,
               },
               {
                 name: "Luxitin Volumizing Spray",
                 price: "$28",
-                image: "/images/products/spray.svg",
+                image: volumizingImage,
               },
               {
                 name: "Luxitin Scalp Soothing Elixir",
                 price: "$32",
-                image: "/images/products/elixir.svg",
+                image: scalpImage,
               },
               {
                 name: "Luxitin Overnight Repair Treatment",
                 price: "$38",
-                image: "/images/products/overnight.svg",
+                image: nightImage,
               },
             ].map((p) => (
               <div key={p.name} className="luxitin-surface overflow-hidden">
