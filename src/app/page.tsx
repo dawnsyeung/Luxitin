@@ -7,6 +7,7 @@ import serumImage from "../../Serum.png";
 import volumizingImage from "../../Volumizing.png";
 import scalpImage from "../../Scalp.png";
 import nightImage from "../../Night.png";
+import ecoLuxuryImage from "../../luxitin_img_9.png";
 
 export default function HomePage() {
   return (
@@ -79,10 +80,8 @@ export default function HomePage() {
               </p>
               <div className="mt-5 overflow-hidden rounded-[calc(var(--radius)-6px)] border border-white/10 bg-black/20">
                 <Image
-                  src="/images/packaging-degradation-timeline.svg"
-                  alt="Illustration showing chitin-based packaging breaking down naturally over time"
-                  width={1100}
-                  height={520}
+                  src={ecoLuxuryImage}
+                  alt="Luxitin eco-luxury packaging"
                   className="h-auto w-full"
                 />
               </div>
