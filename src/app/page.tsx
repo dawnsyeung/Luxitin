@@ -257,8 +257,11 @@ export default function HomePage() {
           <h2 className="text-xl font-semibold tracking-tight">Contact</h2>
           <p className="mt-3 max-w-prose text-[color:var(--muted)]">
             Questions, press, or partnerships:{" "}
-            <a className="underline" href="mailto:hello@luxitin.example">
-              hello@luxitin.example
+            <a
+              className="underline"
+              href="mailto:dawn@earlylightholdings.com"
+            >
+              dawn@earlylightholdings.com
             </a>
           </p>
         </div>

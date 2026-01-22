@@ -16,8 +16,11 @@ export function SiteFooter() {
           </p>
           <p className="mt-4 text-sm text-[color:var(--muted)]">
             Contact:{" "}
-            <a className="underline" href="mailto:hello@luxitin.example">
-              hello@luxitin.example
+            <a
+              className="underline"
+              href="mailto:dawn@earlylightholdings.com"
+            >
+              dawn@earlylightholdings.com
             </a>
           </p>
         </div>
