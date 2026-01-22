@@ -13,14 +13,17 @@ export function SiteHeader() {
 
   return (
     <header className="py-6">
-      <div className="flex items-center justify-between gap-4">
+      <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
         <Link
           href="/"
           className="text-base font-semibold tracking-[0.24em] uppercase"
         >
           Luxitin
         </Link>
-        <nav aria-label="Primary" className="flex items-center gap-6 text-sm">
+        <nav
+          aria-label="Primary"
+          className="flex w-full flex-wrap items-center gap-x-4 gap-y-2 text-xs sm:w-auto sm:text-sm"
+        >
           <Link
             href="/science"
             aria-current={isActive(pathname, "/science") ? "page" : undefined}
