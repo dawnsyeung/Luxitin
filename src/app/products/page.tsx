@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import lineupImage from "../../../luxitin_img_9.png";
 
 export const metadata = {
   title: "Products",
@@ -115,10 +116,8 @@ export default function ProductsPage() {
         <div className="lg:col-span-6">
           <div className="luxitin-surface overflow-hidden p-0">
             <Image
-              src="/images/products-hero.svg"
-              alt="Product lineup illustration with chitin-based packaging highlights"
-              width={1400}
-              height={900}
+              src={lineupImage}
+              alt="Luxitin product lineup image"
               className="h-auto w-full"
               priority
             />
