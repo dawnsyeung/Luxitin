@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import moleculesImage from "../../../molecules.png";
+
 export const metadata = {
   title: "Science",
   description:
@@ -49,10 +51,8 @@ export default function SciencePage() {
         <div className="lg:col-span-6">
           <div className="luxitin-surface overflow-hidden p-0">
             <Image
-              src="/images/chitin-molecular-structure.svg"
+              src={moleculesImage}
               alt="Diagram of chitin’s repeating molecular structure"
-              width={1400}
-              height={900}
               className="h-auto w-full"
               priority
             />
