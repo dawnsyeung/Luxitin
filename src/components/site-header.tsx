@@ -19,8 +19,8 @@ export function SiteHeader() {
           <Image
             src="/NEWLOGO.png"
             alt="Luxitin"
-            width={570}
-            height={132}
+            width={380}
+            height={88}
             priority
             sizes="570px"
             className="h-[132px] w-auto max-w-[70vw] object-contain"
