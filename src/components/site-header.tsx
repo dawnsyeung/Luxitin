@@ -22,8 +22,8 @@ export function SiteHeader() {
             width={380}
             height={88}
             priority
-            sizes="570px"
-            className="h-[132px] w-auto max-w-[70vw] object-contain"
+            sizes="380px"
+            className="h-[88px] w-auto max-w-[70vw] object-contain"
           />
         </Link>
         <nav
