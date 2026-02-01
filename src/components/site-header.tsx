@@ -13,17 +13,17 @@ export function SiteHeader() {
   const pathname = usePathname() ?? "/";
 
   return (
-    <header className="py-6">
+    <header className="bg-transparent py-6">
       <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
         <Link href="/" className="flex items-center">
           <Image
             src="/NEWLOGO.png"
             alt="Luxitin"
-            width={380}
-            height={88}
+            width={570}
+            height={132}
             priority
-            sizes="380px"
-            className="h-[88px] w-auto max-w-[70vw] object-contain"
+            sizes="570px"
+            className="h-[132px] w-auto max-w-[70vw] object-contain"
           />
         </Link>
         <nav
