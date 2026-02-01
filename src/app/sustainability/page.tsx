@@ -57,6 +57,7 @@ export default function SustainabilityPage() {
               height={900}
               className="h-auto w-full"
               priority
+              unoptimized
             />
           </div>
         </div>
