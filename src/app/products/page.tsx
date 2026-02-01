@@ -1,6 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import lineupImage from "../../../luxitin_img_9.png";
+import shampooImage from "../../../Shampoo.png";
+import maskImage from "../../../Mask.png";
+import serumImage from "../../../Serum.png";
+import volumizingImage from "../../../Volumizing.png";
+import nightImage from "../../../Night.png";
 
 export const metadata = {
   title: "Products",
@@ -18,7 +23,7 @@ const products = [
       "Packaged in a chitin-based bottle that’s fully compostable, offering natural antimicrobial protection for longer freshness.",
     price: "$25",
     size: "250ml",
-    image: "/images/products/shampoo.svg",
+    image: shampooImage,
   },
   {
     name: "Luxitin Deep Conditioning Mask",
@@ -29,7 +34,7 @@ const products = [
       "Housed in innovative chitin jars that biodegrade in months, reducing plastic waste while maintaining product integrity.",
     price: "$35",
     size: "200g",
-    image: "/images/products/mask.svg",
+    image: maskImage,
   },
   {
     name: "Luxitin Protective Hair Serum",
@@ -40,7 +45,7 @@ const products = [
       "Delivered in eco-friendly chitin tubes that are lightweight and fully recyclable in nature, innovating beyond traditional packaging.",
     price: "$30",
     size: "100ml",
-    image: "/images/products/serum.svg",
+    image: serumImage,
   },
   {
     name: "Luxitin Volumizing Spray",
@@ -51,7 +56,7 @@ const products = [
       "Sprayed from chitin-derived bottles that provide a moisture barrier and decompose harmlessly, showcasing our commitment to innovation.",
     price: "$28",
     size: "150ml",
-    image: "/images/products/spray.svg",
+    image: volumizingImage,
   },
   {
     name: "Luxitin Scalp Soothing Elixir",
@@ -62,7 +67,7 @@ const products = [
       "Encased in chitin packaging that’s naturally antibacterial, extending shelf life without chemicals.",
     price: "$32",
     size: "50ml",
-    image: "/images/products/elixir.svg",
+    image: serumImage,
   },
   {
     name: "Luxitin Overnight Repair Treatment",
@@ -73,7 +78,7 @@ const products = [
       "Packaged in sustainable chitin containers that innovate by being both protective and planet-friendly, breaking down fully after use.",
     price: "$38",
     size: "150ml",
-    image: "/images/products/overnight.svg",
+    image: nightImage,
   },
 ];
 
