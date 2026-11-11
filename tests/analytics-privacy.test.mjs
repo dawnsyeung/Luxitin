@@ -36,3 +36,19 @@ test('initial, SPA and back visits count once, query/hash and effect repeats do 
   track('https://luxitin.example/science', false);
   assert.deepEqual(events, ['https://luxitin.example/', 'https://luxitin.example/products', 'https://luxitin.example/']);
 });
+
+test('required SDK ingestion token and anonymous session identifiers survive filtering', () => {
+  const required = { token: 'phc_test_public_token', distinct_id: 'anonymous-id', $session_id: 'session-id', $device_id: 'device-id', $window_id: 'window-id' };
+  const result = filterPageview({ event: '$pageview', properties: { ...required, $current_url: 'https://luxitin.example/' } }, true);
+  for (const [key, value] of Object.entries(required)) assert.equal(result.properties[key], value);
+});
+
+test('Global Privacy Control opts out independently of Do Not Track', () => {
+  assert.equal(trackingAllowed(true, '0'), false);
+  assert.equal(trackingAllowed(false, '0'), true);
+  assert.equal(trackingAllowed(undefined, '1'), false);
+  const events = [];
+  createPageviewTracker((url) => events.push(url))('https://luxitin.example/', trackingAllowed(true));
+  assert.equal(events.length, 0);
+  assert.equal(filterPageview({ event: '$pageview', properties: { $current_url: 'https://luxitin.example/' } }, trackingAllowed(true)), null);
+});

@@ -14,7 +14,7 @@ export function AnalyticsPageviews() {
   const pathname = usePathname();
   useEffect(() => {
     if (!process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN || !process.env.NEXT_PUBLIC_POSTHOG_HOST) return;
-    track(window.location.href, trackingAllowed(navigator.doNotTrack,
+    track(window.location.href, trackingAllowed((navigator as Navigator & { globalPrivacyControl?: boolean }).globalPrivacyControl, navigator.doNotTrack,
       (window as Window & { doNotTrack?: string }).doNotTrack));
   }, [pathname]);
   return null;

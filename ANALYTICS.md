@@ -14,10 +14,10 @@ No production settings or deployment are changed by this PR. After review, confi
 - Only `/`, `/products`, `/science`, and `/sustainability` retain their paths. Other paths become `/other`; add newly approved public routes to `src/lib/analytics-privacy.ts`.
 - Query strings, fragments, credentials, arbitrary event properties, page titles, campaign values, and referrer paths are removed. Only referrer origin is retained.
 - No autocapture, forms, clicks, replay, exceptions, heatmaps, performance collection, surveys, feature flag requests, or person profiles. No identification calls.
-- Browser Do Not Track prevents initialization and is checked again before sending.
+- Browser Do Not Track or Global Privacy Control prevents initialization and is checked again before sending.
 - IDs use memory persistence, so unique visitor/returning visitor metrics across page reloads will be limited. The SDK still uses anonymous IDs for pageview/session counting. IP geolocation is disabled; the ingestion service necessarily receives network traffic.
 - Project-wide recording/heatmap settings cannot turn on these explicitly disabled features in this integration. No project-wide settings are modified.
 
 ## Checks
 
-Use Node 22.18+ or Node 24 to run `npm run test:analytics`. Run `npm run lint`, `npx tsc --noEmit`, and `npm run build` before release. The tests cover property filtering, URL redaction, DNT, rejected event types, and duplicate/SPA/back navigation counting. They do not replace a deployed browser network check.
+Use Node 22.18+ or Node 24 to run `npm run test:analytics`. Run `npm run lint`, `npx tsc --noEmit`, and `npm run build` before release. The tests cover property filtering, URL redaction, DNT/GPC, rejected event types, and duplicate/SPA/back navigation counting. They do not replace a deployed browser network check.

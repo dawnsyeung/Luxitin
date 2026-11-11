@@ -5,7 +5,7 @@ const token = process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN;
 const host = process.env.NEXT_PUBLIC_POSTHOG_HOST;
 
 export function browserAllowsAnalytics() {
-  return trackingAllowed(navigator.doNotTrack, (window as Window & { doNotTrack?: string }).doNotTrack);
+  return trackingAllowed((navigator as Navigator & { globalPrivacyControl?: boolean }).globalPrivacyControl, navigator.doNotTrack, (window as Window & { doNotTrack?: string }).doNotTrack);
 }
 
 // Keep initialization here (Next.js 15.3+); route tracking never initializes another client.

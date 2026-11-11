@@ -16,8 +16,8 @@ export function safeReferrer(value: string): string {
   } catch { return ''; }
 }
 
-export function trackingAllowed(...signals: (string | null | undefined)[]): boolean {
-  return !signals.some((signal) => signal === '1' || signal === 'yes');
+export function trackingAllowed(...signals: (string | boolean | null | undefined)[]): boolean {
+  return !signals.some((signal) => signal === true || signal === '1' || signal === 'yes');
 }
 
 /** Discard arbitrary properties, person data, campaign fields, and non-pageview events. */
@@ -36,8 +36,9 @@ export function filterPageview<T extends { event: string; properties: Record<str
     $geoip_disable: true,
     site: 'luxitin',
   };
-  // Anonymous SDK IDs are needed for counting visits; never copy user properties.
-  for (const key of ['distinct_id', '$device_id', '$session_id', '$window_id', '$lib', '$lib_version']) {
+  // The public ingestion token and anonymous SDK IDs are required by the SDK.
+  // Never copy arbitrary user properties.
+  for (const key of ['token', 'distinct_id', '$device_id', '$session_id', '$window_id', '$lib', '$lib_version']) {
     if (typeof event.properties[key] === 'string') properties[key] = event.properties[key];
   }
   return { ...event, properties };
