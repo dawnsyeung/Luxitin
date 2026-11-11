@@ -1,3 +1,4 @@
+import { AnalyticsPageviews } from "@/components/analytics-pageviews";
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 
@@ -63,6 +64,7 @@ export default function RootLayout({
           Skip to content
         </a>
         <div className="mx-auto flex min-h-dvh max-w-[1400px] flex-col px-4 sm:px-6 lg:px-10">
+          <AnalyticsPageviews />
           <SiteHeader />
           <main id="content" className="flex-1">
             {children}

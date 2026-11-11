@@ -7,10 +7,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test:analytics": "node --test tests/analytics-privacy.test.mjs"
   },
   "dependencies": {
     "next": "^16.1.1",
+    "posthog-js": "^1.447.10",
     "react": "19.1.1",
     "react-dom": "19.1.1"
   },
